@@ -11,10 +11,14 @@
             "id": "6274b7a3a9820506",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "index"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Links inversos para index"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída"
+              "title": "Links de saída para index"
             }
           },
           {
@@ -136,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bem-vindo.md",
+                "file": "docs/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Bem-vindo"
+              "title": "Sumário de index"
             }
           }
         ]
@@ -159,15 +165,17 @@
       "canvas:Criar novo canvas": false,
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9f28736a1af27532",
+  "active": "6274b7a3a9820506",
   "lastOpenFiles": [
+    "docs/sobre/sobre.md",
+    "Bem-vindo.md",
     "mkdocs.yml~",
     "docs/documentação",
     "docs/documentaação",
-    "docs/sobre/sobre.md",
     "docs/sobre",
     "sobre/sobre.md",
     "sobre",
@@ -177,7 +185,6 @@
     "venv/lib/python3.13/site-packages/mkdocs/themes/readthedocs/__pycache__/__init__.cpython-313.pyc",
     "venv/lib/python3.13/site-packages/mkdocs/themes/readthedocs/__pycache__",
     "venv/lib/python3.13/site-packages/mkdocs/themes/mkdocs/__pycache__/__init__.cpython-313.pyc",
-    "venv/lib/python3.13/site-packages/mkdocs/themes/mkdocs/__pycache__",
     "venv/lib/python3.13/site-packages/mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.svg",
     "venv/lib/python3.13/site-packages/mkdocs/themes/mkdocs/img/grid.png",
     "docs/index.md",
@@ -187,7 +194,6 @@
     "venv/lib/python3.13/site-packages/backrefs-5.8.dist-info/licenses/LICENSE.md",
     "venv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.md",
     "venv/lib/python3.13/site-packages/markdown-3.8.dist-info/licenses/LICENSE.md",
-    "venv/lib/python3.13/site-packages/mkdocs_material_extensions-1.3.1.dist-info/licenses/LICENSE.md",
-    "Bem-vindo.md"
+    "venv/lib/python3.13/site-packages/mkdocs_material_extensions-1.3.1.dist-info/licenses/LICENSE.md"
   ]
 }
