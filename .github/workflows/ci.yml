@@ -30,10 +30,10 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v2  
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./site
-          name: github-pages 
+          name: github-pages
 
   deploy:
     if: github.ref == 'refs/heads/main'
@@ -53,5 +53,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: github-pages  
-
+          artifact_name: github-pages
