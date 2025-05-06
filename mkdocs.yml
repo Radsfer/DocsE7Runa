@@ -49,3 +49,5 @@ theme:
     - Home: index.md
     - About: 
       - Sobre o Projeto: sobre/sobre.md
+    - Documentation:
+      - Documentação: documentação/Documentação.md
