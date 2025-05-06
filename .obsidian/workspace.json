@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "120767b649ec10fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a61abc433b48906",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6274b7a3a9820506",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a7c44410528ffc3",
+    "type": "split",
+    "children": [
+      {
+        "id": "70db4db79e7bd52f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f28736a1af27532",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "e3b5f422b8dbacd7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "bca6b0ebc8f932e5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a1db0f2241e3be1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5c66b01b3ae0862",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c540ef8102afa92e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "60a600a7e43379ee",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "036d1f3eded82c58",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "93ad7bdbdebd3222",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Bem-vindo.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Bem-vindo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "9f28736a1af27532",
+  "lastOpenFiles": [
+    "mkdocs.yml~",
+    "docs/documentação",
+    "docs/documentaação",
+    "docs/sobre/sobre.md",
+    "docs/sobre",
+    "sobre/sobre.md",
+    "sobre",
+    "docs/sobre.md~",
+    "docs/sobre.md",
+    "venv/bin/mkdocs",
+    "venv/lib/python3.13/site-packages/mkdocs/themes/readthedocs/__pycache__/__init__.cpython-313.pyc",
+    "venv/lib/python3.13/site-packages/mkdocs/themes/readthedocs/__pycache__",
+    "venv/lib/python3.13/site-packages/mkdocs/themes/mkdocs/__pycache__/__init__.cpython-313.pyc",
+    "venv/lib/python3.13/site-packages/mkdocs/themes/mkdocs/__pycache__",
+    "venv/lib/python3.13/site-packages/mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.svg",
+    "venv/lib/python3.13/site-packages/mkdocs/themes/mkdocs/img/grid.png",
+    "docs/index.md",
+    "venv/lib/python3.13/site-packages/material/templates/assets/images/favicon.png",
+    "venv/lib/python3.13/site-packages/mkdocs_get_deps-0.2.0.dist-info/licenses/LICENSE.md",
+    "venv/lib/python3.13/site-packages/pymdown_extensions-10.15.dist-info/licenses/LICENSE.md",
+    "venv/lib/python3.13/site-packages/backrefs-5.8.dist-info/licenses/LICENSE.md",
+    "venv/lib/python3.13/site-packages/idna-3.10.dist-info/LICENSE.md",
+    "venv/lib/python3.13/site-packages/markdown-3.8.dist-info/licenses/LICENSE.md",
+    "venv/lib/python3.13/site-packages/mkdocs_material_extensions-1.3.1.dist-info/licenses/LICENSE.md",
+    "Bem-vindo.md"
+  ]
+}
