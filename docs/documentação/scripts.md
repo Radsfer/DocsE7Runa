@@ -1,5 +1,6 @@
 
 # Arquivo `script.js`
+
 ## Módulos Importados
 
 ```js
