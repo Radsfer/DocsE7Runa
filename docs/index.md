@@ -1,6 +1,15 @@
 # Home
+## Bem-vindo ao R.U.N.A.!
 
-Bem vindo ao R.U.N.A!
+O **R.U.N.A.** — *Rotina Unificada Naturalmente Automatizada* — é um aplicativo inovador focado em transformar a forma como os usuários organizam suas tarefas diárias. Com uma proposta leve, interativa e totalmente gamificada, o projeto visa unir produtividade e motivação, criando um ambiente onde cada tarefa concluída representa uma conquista.
+
+Mais do que um simples gerenciador de afazeres, o R.U.N.A. oferece uma experiência que valoriza o progresso do usuário, integrando recompensas, níveis e desafios em um sistema visual intuitivo. A ideia é clara: fazer com que a rotina se torne algo envolvente, onde o cumprimento de metas diárias contribui não apenas para organização pessoal, mas também para a evolução dentro de um universo simbólico e divertido.
+
+Com recursos como autenticação de usuário, criação de tarefas por tipo (personalizadas, periódicas ou pontuais), possibilidade de anexar arquivos e visualização organizada por abas, o app busca facilitar o dia a dia sem deixar de lado a estética e a experiência do usuário.
+
+Seja bem-vindo à sua nova forma de realizar tarefas. Seja bem-vindo ao universo R.U.N.A.
+
+---
 
 ## Integrantes
 
@@ -76,9 +85,28 @@ Então, ao fim do período de desenvolvimento, tinha-se implementado dentro do p
 
 - **Mudanças na Interface/Gerais:** Pequenas mudanças visuais, como a criação de abas para cada tipo de tarefa, mudanças na coloração, ao passar o mouse por cima demonstra o tipo de tarefa junto a uma pequena tag, melhoria na aba de configurações e polimento na lógica.
 
+---
+
 ### Terceira Release (12/05/25 - 19/05/25)
 
 **Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Pedro Augusto e Rafael Ferreira
 **Responsáveis pela documentação desta versão:**  Rafael Adolfo, Jader Oliveira, João Pedro Rodrigues e Samuel Silva
 
-Durante a reunião alguns pontos foram ressaltados, principalmente relativo as dificuldades encontradas no projeto (como por exemplo a implementação de armazenamento sempre estar associada ao FireBase). Além disso, com a nova rotação de desenvolvedores, alguns conselhos acerca da estruturação do código foram declarados, evitando possíveis erros acerca da assimilação de todo projeto. Portanto 
+Durante a reunião de acompanhamento da terceira semana, alguns pontos críticos e sugestões importantes foram destacados pela equipe. Em especial, ressaltou-se a dificuldade relacionada à obrigatoriedade do uso do Firebase como ferramenta de persistência de dados, o que impacta diretamente na flexibilidade de testes e no tempo de desenvolvimento. Apesar de ser uma solução prática para autenticação e banco de dados em tempo real, o acoplamento do projeto à plataforma exigiu uma curva de aprendizado mais acentuada, principalmente em tarefas como autenticação, armazenamento de arquivos e atualização de documentos aninhados.
+
+Outro ponto abordado diz respeito à nova rotação de membros na equipe de desenvolvimento. A chegada de novos colaboradores ao projeto exigiu uma reorganização do código e melhor documentação das funcionalidades já implementadas. Para isso, conselhos e práticas voltadas à estruturação modular do código foram enfatizados, visando facilitar a assimilação da base existente e evitar bugs causados por más interpretações da lógica previamente desenvolvida.
+
+Nesta etapa, o foco principal está na consolidação e evolução das funcionalidades centrais já implementadas, com destaque para:
+
+* **Aprimoramento das abas por tipo de tarefa**: Embora a separação por categorias (periódica, não-periódica e personalizada) tenha sido introduzida na segunda release, sua implementação ainda pode ser melhorada em termos de UX e organização visual. A meta é tornar essa divisão mais intuitiva e com feedbacks mais claros para o usuário.
+
+* **Melhoria das tarefas do tipo “personalizado”**: O objetivo é permitir que este tipo de tarefa opere de forma mais livre, inclusive removendo a obrigatoriedade do checkbox de conclusão. Isso é relevante para tarefas que não seguem um fluxo tradicional de "fazer e concluir", como lembretes contínuos ou metas abertas.
+
+* **Anexação de arquivos às tarefas**: Uma funcionalidade altamente solicitada é a capacidade de associar arquivos diretamente às tarefas. Esta feature começa a ser prototipada nesta semana, utilizando o armazenamento do Firebase como backend para upload e download de documentos e imagens.
+
+* **Baixa prioridade para sistema de tags**: Apesar de útil para a categorização das tarefas, a implementação do sistema de tags foi considerada menos urgente no momento. Seu desenvolvimento será postergado para releases futuras, após a consolidação das funcionalidades críticas.
+
+* **Integração gradual com a gamificação do aplicativo**: O sistema de recompensas e níveis do app deve futuramente se beneficiar da introdução de tags e da definição de metas baseadas em hábitos. No entanto, nesta fase, a gamificação permanece em segundo plano e será revisitada apenas após as prioridades funcionais.
+
+---
+
