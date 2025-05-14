@@ -204,8 +204,7 @@ Esse é o guia oficial mantido pelos criadores do Scrum. Ele explica os fundamen
 - **Sprint Retrospective**: Discussão sobre o que funcionou e o que pode melhorar para a próxima sprint.
 
     
-
-# Análise do Diagrama de Usuário Inicial — Projeto R.U.N.A.
+## Análise do Diagrama de Usuário Inicial — Projeto R.U.N.A.
 
 ![Diagrama de Usuário do R.U.N.A.](img/diagrama-usuario-runa.png)
 
@@ -240,6 +239,7 @@ Esta camada compreende a lógica de funcionamento do sistema, não acessada dire
 O diagrama está bem estruturado e evidencia preocupações essenciais no desenvolvimento da aplicação, como modularidade, usabilidade e lógica de funcionamento. Ele também ajuda a manter a visão clara da separação entre front-end e lógica de negócios (back-end), o que é essencial para a escalabilidade futura do R.U.N.A.
 
 > Este mapeamento inicial fornece uma base sólida para futuras decisões de arquitetura e implementação, além de facilitar a comunicação entre desenvolvedores, designers e stakeholders.
+
 
 
 # Interface de usuário

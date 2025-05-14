@@ -11,7 +11,7 @@ Seja bem-vindo à sua nova forma de realizar tarefas. Seja bem-vindo ao universo
 
 ---
 
-## Integrantes
+## Integrantes da E7 Studios
 
 - Henrique de Freitas Araújo (ricosgames.henrique@gmail.com)
 - Jader Oliveira Silva (jaderoliveira28@gmail.com)
