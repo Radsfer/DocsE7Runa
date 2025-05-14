@@ -1,5 +1,5 @@
 
-# Arquivo `script.js`
+# 📄 Arquivo `script.js`
 
 ## Módulos Importados
 

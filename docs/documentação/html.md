@@ -1,11 +1,11 @@
 
-# 📄 Estrutura do Código HTML – Projeto R.U.N.A
+# 📄 Arquivo `index.html`
 
 O código apresentado estrutura a interface principal do aplicativo **R.U.N.A.**, um gerenciador de tarefas com elementos de gamificação, utilizando tecnologias como HTML, CSS, JavaScript e Firebase.
 
 ---
 
-### 🔹 Cabeçalho (`<head>`)
+### Cabeçalho (`<head>`)
 
 A seção `<head>` configura o documento e importa os recursos essenciais:
 
@@ -17,9 +17,9 @@ A seção `<head>` configura o documento e importa os recursos essenciais:
 
 ---
 
-### 🔹 Corpo do documento (`<body>`)
+### Corpo do documento (`<body>`)
 
-#### 🔐 Login
+#### Login
 
 ```html
 <div id="login-container">
@@ -29,7 +29,7 @@ Interface simples para autenticação com Google.
 
 ---
 
-#### 💬 Pop-ups e Modais
+#### Pop-ups e Modais
 
 Inclui elementos para interação como:
 
@@ -40,7 +40,7 @@ Inclui elementos para interação como:
 
 ---
 
-#### 🔝 Barra superior
+#### Barra superior
 
 ```html
 <div class="top-info-bar">
@@ -50,9 +50,9 @@ Exibe o nome do usuário, data atual e o tempo restante para a próxima tarefa.
 
 ---
 
-### 🧩 Área principal (`.main-content`)
+### Área principal (`.main-content`)
 
-#### 🔖 Abas (Tabs)
+#### Abas (Tabs)
 
 ```html
 <div class="tabs">
@@ -66,7 +66,7 @@ Organiza a navegação em diferentes seções:
 
 ---
 
-#### 📋 Cards de tarefas
+#### Cards de tarefas
 
 ```html
 <div class="card purple-card">
@@ -79,7 +79,7 @@ Dois cards visíveis:
 
 ---
 
-### 🔻 Navegação inferior (`.bottom-nav`)
+### Navegação inferior (`.bottom-nav`)
 
 ```html
 <div class="bottom-nav">
@@ -89,13 +89,13 @@ Menu fixo que permite trocar de aba com ícones intuitivos.
 
 ---
 
-### 🔁 Service Worker
+### Service Worker
 
 Inclui script para registro do Service Worker, permitindo o uso offline (PWA).
 
 ---
 
-### 📜 Scripts finais
+### Scripts finais
 
 ```html
 <script type="module" src="script.js">
@@ -105,7 +105,7 @@ Importa a lógica principal do aplicativo, como a manipulação das tarefas, int
 
 ---
 
-## 🧠 Comentário Final
+### Comentário Final
 
 A estrutura modularizada do HTML facilita a manutenção e expansão do sistema. A separação entre lógica de autenticação (`auth.js`), configuração Firebase (`firebase-config.js`), lógica de tarefas (`tarefas.js`) e UI geral (`script.js`) permite uma arquitetura organizada. Além disso, o uso de modais e elementos dinâmicos contribui para uma UX moderna e funcional.
 
