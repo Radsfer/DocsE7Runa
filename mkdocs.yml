@@ -51,4 +51,6 @@ theme:
       - Sobre o Projeto: sobre/sobre.md
     - Documentation:
       - Documentação: documentação/Documentação.md
-      - Scripts: documentação/scripts.md
+      - Diagramas: documentação/Diagramas.md
+      - Scripts (Arquivo JavaScript): documentação/scripts.md
+      - HTML: documentação/html.md
