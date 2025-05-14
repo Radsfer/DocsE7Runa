@@ -97,6 +97,68 @@ Embora ações de má-fé por parte de usuários estejam fora do escopo de contr
 
 Dessa forma, os riscos foram mapeados e tratados com soluções específicas que visam garantir a escalabilidade, segurança e fluidez do software em contextos reais de uso.
 
+### Possíveis ferramentas e frameworks.
+
+- Vanilla Stack (HTML + CSS + Javascript)
+- Node.js (para contato com servidor)
+- ngrok (para testes com servidor)
+- VS Code com Live Server (para desenvolvimento)
+- API do Firebase (para o controle de databases)
+- API do Google Authenticator (para autenticação de usuário)
+
+### Divisões dos Membros da Equipe.
+
+- Henrique (Desenvolvedor, Design Lead)
+- Jader (Desenvolvedor/Tester)
+- João Pedro (Desenvolvedor, Product Owner)
+- Pedro (Desenvolvedor/Tester)
+- Rafael Adolfo (Desenvolvedor, Scrummaster)
+- Rafael Ferreira (Desenvolvedor/Tester)
+- Samuel (Desenvolvedor/Tester)
+
+### Exemplos de User Case
+
+_1. Rotina de organização da casa:_
+
+O usuário vai criar tarefas baseadas em rotinas caseiras (como varrer a casa, limpar o banheiro ou arrumar a cozinha). Para isso, ao abrir o aplicativo, ele vai criar uma nova tarefa com base nas preferências dele e vai marcar o prazo de conclusão caso seja necessário.
+
+_2. Rotina de academia_
+
+O usuário vai criar tarefas baseadas em seu treino na academia (quais exercícios ele precisa fazer em determinado dia, por exemplo). Para isso, ao abrir o aplicativo, ele pode criar uma tarefa que corresponde a um dia de academia e adicionar na descrição os exercícios que ele precisa fazer, podendo incluir até mesmo anexos relevantes como imagens dos exercícios. Essa tarefa pode ser programada para se repetir semanalmente em um dia específico (por exemplo, uma tarefa "Dia de Perna" que inclui todos os exercícios de perna do usuário e que se repete toda sexta-feira).
+
+_3. Rotina de estudos na escola/faculdade_
+
+O usuário vai criar rotinas baseadas nos seus estudos na escola ou na faculdade. Para isso, ao abrir o aplicativo, ele pode criar uma tarefa que corresponde a uma sessão de estudo e adicionar na descrição da tarefa qualquer informação relevante. Um exemplo disso seria um aluno do ensino médio criar uma tarefa chamada "Estudo de História", onde ele adiciona na descrição os conteúdos relevantes da matéria para serem estudados, além de links importantes e anexos de livros para estudo. A tarefa pode também ser repetida semanalmente, caso esse estudo precise se tornar um hábito.
+
+_4. Acompanhamento de progressão na academia_
+
+O usuário pode acompanhar o progresso de sua continuidade na academia. Para isso, o usuário vai criar e concluir diversas tarefas relacionadas ao tema, e poderá perceber que seu avatar no aplicativo está também evoluindo e ganhando mais status de força, o que indica que uma progressão está sendo feita nessa categoria de exercícios.
+
+_5. Acompanhamento de conclusão de tarefas da escola/faculdade_
+
+O usuário pode acompanhar a conclusão de suas tarefas escolares ou da graduação. Para isso, o usuário vai criar e concluir diversas tarefas relacionadas ao estudo, e seu avatar no aplicativo irá evoluir em status com base nessa categoria de tarefas.
+
+_6. Planejamento de rotina de hobbies_
+
+O usuário pode criar e planejar uma rotina pessoal de hobbies. Para isso, ao abrir o aplicativo, ele pode criar uma tarefa que corresponde a uma sessão de prática de um hobby e adicionar na descrição as informações relevantes para isso. Essa tarefa também pode ser programada para se repetir semanalmente ou mensalmente. Um exemplo disso seria um usuário criar uma tarefa chamada "Aula de Tricô", em que ele adiciona na descrição informações relevantes sobre a aula e links de vídeos sobre tipos específicos de técnicas de tricô. Essa tarefa também pode se repetir semanalmente caso o usuário tenha essas aulas na quinta-feira.  
+
+_7. Notificação de datas importantes_
+
+O usuário pode criar tarefas que atuam como notificações para datas importantes. Para isso, ao abrir o aplicativo, ele pode criar uma tarefa com um título que remete à data que precisa ser lembrada, habilitar notificações com base em uma data selecionada (relembrar diariamente, semanalmente, mensalmente, em um dia específico ou anualmente) e adicionar informações relevantes à descrição. Um exemplo seria um usuário criar uma tarefa chamada "Aniversário da Irmã" que o notifica todo dia 15 de Junho e possui informações na descrição sobre o tipo de presente que ela gosta. 
+
+_8. Montagem de materiais de estudo por tarefa_
+
+O usuário pode, através da edição de uma tarefa, montar um guia de materiais de estudo a serem utilizados. Para isso, ao abrir o aplicativo e criar uma tarefa, ele pode adicionar na descrição todos os links relevantes e materiais de estudo a serem usados. Por exemplo, um usuário pode criar uma tarefa chamada "Trabalho de Trigonometria", em que ele adiciona na descrição uma série de anexos de livros e vídeos relevantes da internet para sumarizar os conceitos básicos da trigonometria.
+
+_9. Notificação de tarefas do dia-a-dia_
+
+O usuário pode, através da habilitação de notificações, permitir que ele possa ser notificado de tarefas do dia-a-dia. Para isso, ao abrir o aplicativo e criar tarefas de repetição diária, o usuário pode habilitar as notificações, inclusive em horários específicos. Um exemplo disso seria um usuário que habilita a notificação de uma tarefa chamada "Varrer a Rua" todos os dias às 9 da manhã.
+
+_10. Busca por satisfação ao concluir uma tarefa_
+
+Ao concluir uma tarefa, o avatar do usuário no aplicativo se desenvolve evoluindo e ganhando recompensas, o que pode atender à busca por satisfação imediata ao mesmo tempo em que o usuário concluir uma tarefa. Para isso, é apenas preciso que o usuário marque uma tarefa criada no aplicativo como concluída e algum progresso será feito.
+
+
 ## Modelo utilizado durante o Projeto
 
 A metodologia organizacional utilizada durante o projeto foi o **Scrum**. Esta é uma metodologia ágil de desenvolvimento de software que ajuda equipes a trabalharem de forma colaborativa, adaptável e eficiente. É ideal para projetos com requisitos que podem mudar com o tempo — como é o caso de aplicativos voltados ao público final. O modelo **Scrum** surgiu no início dos anos 1990 como uma resposta às limitações dos métodos tradicionais de desenvolvimento de software (como o modelo cascata), que muitas vezes resultavam em projetos longos, inflexíveis e com entregas de baixo valor ao cliente. 
