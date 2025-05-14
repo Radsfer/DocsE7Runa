@@ -41,18 +41,44 @@ A seguir, descreve-se a estrutura modular adotada, com os arquivos principais e 
 
 A modularização proposta permite melhor organização do código, facilita manutenções futuras e oferece flexibilidade para expansão das funcionalidades do sistema. Além disso, cada módulo possui uma responsabilidade única e bem definida, respeitando o princípio de *separação de preocupações*, amplamente adotado no desenvolvimento de aplicações modernas baseadas na arquitetura Web.
 
+Esta versão inicial já possibilitava ao usuário:
+- Logar. Dessa maneira, através da API de Login da Google, tornou-se possível armazenar os dados (tarefas e preferências do usuário).
+- Criar Tarefas (que erão distribuidas entre dois blocos, um para tarefas ainda não realizadas e outro para tarefas realizadas). As tarefas eram contabilizadas como realizadas quando a data selecionada para a mesma era ultrapassada.
+- Modificar e Excluir Tarefas. Havia a possibilidade de modificar a data selecionada para a tarefa, junto a sua descrição, bem como excluir a mesma.
+- Deslocar-se Pela Abas. Tentou-se dentro do _R.U.N.A_ implementar uma interface interativa associada a dois parâmetros: necessidade de organização das tarefas de acordo com a prefência do usuário e priorizar a utilização em dispositivos móveis através de deslocamentos horizontais em abas distintas. Além disso a interface possuia duas barra, uma no topo que demonstrava o nome do usuário, junto a data e um contador relativo a próxima tarefa em tempo.
+ 
+
 ---
 
 
 ### Segunda Release (05/05/25 - 12/05/25)
 
-**Responsáveis pelo desenvolvimento desta versão:** 
-- Henrique de Freitas, Jader Oliveira, João Pedro Rodrigues e Samuel Silva
-**Responsáveis pela documentação desta versão:** 
-- Pedro Augusto, Rafael Adolfo e Rafael Ferreira
+**Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Jader Oliveira, João Pedro Rodrigues e Samuel Silva
+**Responsáveis pela documentação desta versão:** Pedro Augusto, Rafael Adolfo e Rafael Ferreira
 
-Durante a reunião inicial que precedeu esta semana de desenvolvimento da segunda versão do R.U.N.A, muito foi-se discutido acerca da disposição do software, principalmente sobre as necessidades que deveriam ser atendidas de imediato para um melhor arranjo dos módulos do programa em si. Criou-se um diagrama de usuário como "guia" para os desenvolvedores ao longo do projeto. Assim, para essa primeira semana de desenvolvimento após o protótipo, tinha-se como objetivo:
+Durante a reunião inicial que precedeu esta semana de desenvolvimento da segunda versão do R.U.N.A, muito foi-se discutido acerca da disposição do software, principalmente sobre as necessidades que deveriam ser atendidas de imediato para um melhor arranjo dos módulos do programa em si. Criou-se um diagrama de usuário como "guia" para os desenvolvedores ao longo do projeto. Assim, para essa primeira semana de desenvolvimento após o protótipo, tinha-se como objetivo: 
+
 > Implementar a tipagem de tarefas (Importantes Periódicas, Importantes Não-Periódicas, Personalizadas) visando futuramente integrar-se com o sistema de 'tags' para tarefas.
-> Ajustar a frequência selecionada pelo usuário para a recorrência de tarefas periódicas e personalizadas suprindo as necessidades impostas pelo mesmo.
-> 
 
+> Ajustar a frequência selecionada pelo usuário para a recorrência de tarefas periódicas e personalizadas suprindo as necessidades impostas pelo mesmo. 
+
+Então, ao fim do período de desenvolvimento, tinha-se implementado dentro do programa:
+
+- **Tipagem de Tarefas:** A tipagem de tarefas foi exatamente como aquela prevista (Importante Periódica, Importante Não-Periódica e Personalizada). Porém, o tipo personalizado ainda havia uma menor capacidade de conceder liberdade ao usuário durante a manipulação desta tarefa ao seu gosto. Além disso, as tarefas eram depostas em novos blocos de acordo com a sua tipagem.
+
+- **Sistema de Conclusão de Tarefas:** Agora as tarefas possuem um _checkbox_ do qual ao selecionar esta passa a ser concluida, concedendo _XP_ ao usuário além de movendo-a para um bloco de tarefas concluidas. Caso a data limite selecionada da tarefa fosse ultrapassada, esta então contaria como uma tarefa expirada.
+
+- **Sistema de XP e Pequena Interface do Futuro Personagem:**  Iniciou-se a gameficação do projeto, apresentando um contador de _XP_ para o usuário associado a um nível com base em quanto dessa experiência você acumula. Essa interface fica presente em todas abas enquanto apresentava uma imagem de placeholder para a futura personagem do usuário.
+
+- **Frequência de Tarefas:** A frequência foi implementada para repor tarefas importantes periódicas além das personalizadas (esta, por sua vez, ainda carentes de um sistema mais amplo). A
+
+- **Melhoria do Contador de Tarefa:** O contador de tarefa sempre demonstra a tarefa mais próxima, independente do tipo, além de quando ser clicada demonstrar todas tarefas (ainda não realizadas, expiradas e concluidas) com a possibilidade de organiza-las por tipo ou por ordem (padrão).
+
+- **Mudanças na Interface/Gerais:** Pequenas mudanças visuais, como a criação de abas para cada tipo de tarefa, mudanças na coloração, ao passar o mouse por cima demonstra o tipo de tarefa junto a uma pequena tag, melhoria na aba de configurações e polimento na lógica.
+
+### Terceira Release (12/05/25 - 19/05/25)
+
+**Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Pedro Augusto e Rafael Ferreira
+**Responsáveis pela documentação desta versão:**  Rafael Adolfo, Jader Oliveira, João Pedro Rodrigues e Samuel Silva
+
+Durante a reunião alguns pontos foram ressaltados, principalmente relativo as dificuldades encontradas no projeto (como por exemplo a implementação de armazenamento sempre estar associada ao FireBase). Além disso, com a nova rotação de desenvolvedores, alguns conselhos acerca da estruturação do código foram declarados, evitando possíveis erros acerca da assimilação de todo projeto. Portanto 
