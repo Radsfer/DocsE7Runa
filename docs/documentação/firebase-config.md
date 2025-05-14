@@ -1,4 +1,4 @@
-# Arquivo `firebase-config.js`
+# 📄 Arquivo `firebase-config.js`
 
 Este arquivo é responsável pela **configuração e inicialização do Firebase** no projeto. Ele garante o acesso aos serviços essenciais da plataforma, como o Firestore e Analytics, e exporta as instâncias necessárias para uso em outros módulos do sistema.
 
