@@ -1,7 +1,6 @@
 # Home
 
-![Logo](logo-runa-site.png){width="300"}
-
+![Logo](logo-runa-site.png)
 ## Bem-vindo ao R.U.N.A.!
 
 O **R.U.N.A.** — *Rotina Unificada Naturalmente Automatizada* — é um aplicativo inovador focado em transformar a forma como os usuários organizam suas tarefas diárias. Com uma proposta leve, interativa e totalmente gamificada, o projeto visa unir produtividade e motivação, criando um ambiente onde cada tarefa concluída representa uma conquista.
