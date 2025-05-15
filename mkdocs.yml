@@ -2,8 +2,8 @@ site_name: E7-Runa
 site_url: https://mydomain.org/mysite
 theme:
   name: material
-  logo: logo-nobg.png
-  favicon: logo-nobg.png
+  logo: img/logo-nobg.png
+  favicon: img/logo-nobg.png
   
   palette: 
     - scheme: default
