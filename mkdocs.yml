@@ -3,6 +3,7 @@ site_url: https://mydomain.org/mysite
 theme:
   name: material
   logo: logo-runa-site.png
+  favicon: logo-runa-site.png
   
   palette: 
     - scheme: default
