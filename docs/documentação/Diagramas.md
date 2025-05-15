@@ -1,6 +1,6 @@
 ## Análise do Diagrama de Usuário Inicial — Projeto R.U.N.A.
 
-![Diagrama de Usuário do R.U.N.A.](img/diagrama-usuario-runa.png)
+![Diagrama de Usuário do R.U.N.A.](../img/diagrama-usuario-runa.png)
 
 O diagrama apresentado é uma representação clara e funcional da estrutura lógica inicial do aplicativo **R.U.N.A.**, dividida entre duas camadas principais: o que é **visível para o usuário** e o que é **não visível para o usuário**.
 
