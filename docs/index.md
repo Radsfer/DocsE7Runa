@@ -1,6 +1,6 @@
 # Home
 
-![(/docs/documentação/img/logo-runa.jpeg)]
+![(img/logo-runa.jpeg)]
 
 ## Bem-vindo ao R.U.N.A.!
 
