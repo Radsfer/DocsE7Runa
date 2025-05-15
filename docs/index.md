@@ -1,6 +1,6 @@
 # Home
 
-![Logo](logo-runa-site.png)
+![Logo](img/360nblogo.png)
 
 ## Bem-vindo ao R.U.N.A.!
 
