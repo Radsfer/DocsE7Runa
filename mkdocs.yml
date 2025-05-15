@@ -53,7 +53,7 @@ theme:
   nav:
     - Home: index.md
     - Changelog: 
-      - Histórico de Versões: versoes/Versões.md
+      - Histórico de Versões: versões/Versões.md
     - Documentation:
       - Documentação: documentação/Documentação.md
       - Diagramas: documentação/Diagramas.md
