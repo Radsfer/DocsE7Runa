@@ -2,6 +2,7 @@ site_name: E7-Runa
 site_url: https://mydomain.org/mysite
 theme:
   name: material
+  logo: /documentação/img/logo-runa.jpg
   
   palette: 
     - scheme: default
