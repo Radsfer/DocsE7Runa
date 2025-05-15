@@ -4,7 +4,7 @@ Essa seção ficará responsável por descrever as atualizações feitas durante
 
 ---
 
-### Terceira Release (12/05/25 - 19/05/25)
+## Terceira Release (12/05/25 - 19/05/25)
 
 **Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Pedro Augusto e Rafael Ferreira
 **Responsáveis pela documentação desta versão:**  Rafael Adolfo, Jader Oliveira, João Pedro Rodrigues e Samuel Silva
@@ -27,7 +27,7 @@ Nesta etapa, o foco principal está na consolidação e evolução das funcional
 
 ---
 
-### Segunda Release (05/05/25 - 12/05/25)
+## Segunda Release (05/05/25 - 12/05/25)
 
 **Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Jader Oliveira, João Pedro Rodrigues e Samuel Silva
 **Responsáveis pela documentação desta versão:** Pedro Augusto, Rafael Adolfo e Rafael Ferreira
@@ -54,7 +54,7 @@ Então, ao fim do período de desenvolvimento, tinha-se implementado dentro do p
 
 ---
 
-### Protótipo Inicial (28/04/25 - 05/05/25)
+## Protótipo Inicial (28/04/25 - 05/05/25)
 
 
 O protótipo inicial foi concebido com o objetivo de demonstrar a estruturação básica necessária para a criação, organização e gerenciamento de tarefas personalizadas por parte do usuário. Esta etapa visa apresentar ao orientador e demais avaliadores a proposta inicial da interface gráfica, bem como validar a separação modular dos arquivos responsáveis pelas funcionalidades do sistema.
