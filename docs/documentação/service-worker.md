@@ -60,3 +60,5 @@ self.addEventListener('fetch', function(event) {
 
 Este `Service Worker` fornece um **modo offline básico**, garantindo que os arquivos essenciais estejam sempre disponíveis para o usuário. Ele melhora a experiência em redes instáveis e contribui para o desempenho geral do PWA.
 
+---
+
