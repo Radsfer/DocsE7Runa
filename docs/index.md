@@ -1,9 +1,6 @@
 # Home
 
-![Logo](logo-runa-site.png){ width="300" }
-/// caption
-Projeto R.U.N.A
-///
+![Logo](logo-runa-site.png)
 
 ## Bem-vindo ao R.U.N.A.!
 
