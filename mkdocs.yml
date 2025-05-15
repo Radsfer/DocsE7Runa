@@ -52,8 +52,8 @@ theme:
 
   nav:
     - Home: index.md
-    - About: 
-      - Sobre o Projeto: sobre/sobre.md
+    - Changelog: 
+      - Histórico de Versões: versoes/versoes.md
     - Documentation:
       - Documentação: documentação/Documentação.md
       - Diagramas: documentação/Diagramas.md
