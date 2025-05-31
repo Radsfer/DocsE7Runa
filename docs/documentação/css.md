@@ -251,7 +251,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Tags e classificações com estilos vizuais personalizados por nível ou origem.
 
-## Switches e Botoões Customizáveis
+## Switches e Botões Customizáveis
 
 ```js
 .switch input:checked + .slider{
