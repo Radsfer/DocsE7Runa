@@ -133,4 +133,163 @@ body.ios-pwa{
 }
 ```
 
-* Área principal
+* Define o ambiente principal, com rolagem vertical.
+
+
+```js
+.bottom-nav{
+    ...
+}
+
+.botom-nav.separator.active,
+.bottom-nav-separator{
+    ...
+}
+```
+
+* Implementam a barra inferior fixa com ícones e indicadores vizuais ativous ou inativos.
+
+
+```js
+.top-info-bar{
+    ...
+}
+```
+
+* Barra de cima que mostra informações importantes e se adapta aos limites de largura e conteúdo.
+
+
+```js
+.top-info-bar span,
+.top-infor-bar .next-event,
+.top-info-bar .icons-info{
+    ...
+}
+```
+
+* Essa implementação é o que garante que os textos da barra superior permaneçam justificados e não estourem o layout definido.
+
+
+```js
+input, textarea, select{
+    ...
+}
+```
+
+* Campos de interação com usuário.
+
+
+```js
+input[type="checkbox"]{...}
+input[type="checkbox"]:checked {...}
+```
+* Checkbox customizada.
+
+
+```js
+.slider-container::webkit-scroller{
+    ...
+}
+slider-container::webkit-scrollbar-thumb{
+    ...
+}
+```
+
+* Estilização da barra de rolagem para ambientes de navegador.
+
+
+```js
+.dialog-container,
+.modal,
+#popup-alert{
+    ...
+}
+```
+
+* Modais, pop-ups (notificações) e diálogos. Aplicados com fundo semitransparente, bordas arredondadas, blur e sombra como muitos apps fazem.
+
+
+```js
+.task-rect[...]{
+    ...
+}
+```
+
+* Implementa cards interativos para cada tipo de tarefa, com esquemas de cores individuais para cada uma. Também aplica animação de hover.
+
+```js
+.tag-nivel-1,
+.tag-nivel-2,
+.tag-personalizada{
+    ...
+}
+```
+
+* Tags e classificações com estilos vizuais personalizados por nível ou origem.
+
+
+```js
+.switch input:checked + .slider{
+    ...
+}
+```
+
+* Switches e botões customizados com comportamento responsivo e animado.
+
+
+```js
+#lista-tarefas-organizada{
+    ...
+}
+
+.grupo-tipo{
+    ...
+}
+```
+
+* Faz a organização de tarefas em colunas por tipo de tarefa. Aplica uma cor mais clara que contrasta com o fundo geral da aplicação, que é escuro.
+
+
+```js
+.grafico-grid{
+    ...
+}
+.grafico-card{
+    ...
+}
+```
+
+* Layout de gráficos e painel. Aplica a disposição dos gráficos lado a lado.
+
+
+```js
+#modal-visualizacao-anexo .modal-content pre, iframe {
+    ...
+}
+.anexo-link{
+    ...
+}
+```
+
+* Implementa a visualização de arquivos e anexos com legibilidade e contraste.
+
+
+```js
+.popup-personagem{
+    ...
+}
+```
+
+* Exibe informações do usuário, neste caso o personagem.
+
+
+```js
+#calendario-container{
+    ...
+}
+.dia{
+    ...
+}
+```
+
+* Calendário de tarefas, implementado com uma inferface funcional e cores distintas por tipo de tarefa.
