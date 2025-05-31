@@ -10,7 +10,10 @@ Como o HTML é uma linguagem de marcação, e não de lógica como python, C ou 
 
 ---
 
-### Estrutura
+### **Estrutura**
+
+## Estilo Base e Reset
+
 ```js
 html, body{
     ...
@@ -22,6 +25,7 @@ body{
 ```
 * Define fundo escuro e altura total, aplicando layout de Flexbox vertical. Além disso remove margens e paddings padrão do navegador.
 
+## Suporte IOS
 
 ```js
 body.ios-pwa{
@@ -30,6 +34,7 @@ body.ios-pwa{
 ```
 * Garante que a interface esteja correta para dispositivos IOS.
 
+## Container da Aplicação
 
 ```js
 .container{
@@ -39,13 +44,17 @@ body.ios-pwa{
 
 * Faz a definição de contêiner transparente, aplicando efeito de desfoque. Também previne a rolagem **horizontal**.
 
+## Ocultação de Elmentos
+
 ```js
 .hidden{
     ...
 }
 ```
+
 * Em tradução literal, hidden significa "escondido", exatamente o que essa linha faz, permitindo que elementos sejam escondidos dinamicamente.
 
+## Layout da Loja e Inventário
 
 ```js
 .loja-grid, .inventario-grid{
@@ -53,8 +62,9 @@ body.ios-pwa{
 }
 ```
 
-* Apresenta os itens da **loja** em duas colunas com espaçamento uniforme.
+* Apresenta os itens da **loja** em duas colunas com espaçamento uniforme. Também organiza o inventário.
 
+## Cartões de Item
 
 ```js
 .item-card{
@@ -71,6 +81,7 @@ body.ios-pwa{
 ```
 * Essencialmente essas funções ajustam a forma como o item é apresentado ao usuário dentro do aplicativo. Questões como imagem, cor e o preço.
 
+## Botão de Compra
 
 ```js
 .btn-comprar{...}
@@ -78,6 +89,8 @@ body.ios-pwa{
 ```
 
 * Botão de compra verde com interação hover.
+
+## Formato Principal da Aplicação
 
 ```js
 .app{
@@ -87,6 +100,7 @@ body.ios-pwa{
 
 * Layout Principal, é o container central que engloba o conteúdo da aplicação.
 
+## Corpo da Aplicação
 
 ```js
 #app-body{
@@ -94,8 +108,9 @@ body.ios-pwa{
 }
 ```
 
-* Corpo da aplicação.
+* Corpo da aplicação, inicialmente oculto. É exibido após o carregamento via javascript.
 
+## Seções de Tarefas
 
 ```js
 #tarefas-periodico,
@@ -107,6 +122,7 @@ body.ios-pwa{
 
 * Definição de dimensões das áreas que exibem listas de tarefas.
 
+## Cartões Gerais e Aplicação de Visuais
 
 ```js
 .card{
@@ -126,6 +142,7 @@ body.ios-pwa{
 
 * Cartões temáticos para usos específicos dentro da aplicação.
 
+## Aréas de Navegação e Conteúdos
 
 ```js
 .main-content{
@@ -149,6 +166,7 @@ body.ios-pwa{
 
 * Implementam a barra inferior fixa com ícones e indicadores vizuais ativous ou inativos.
 
+## Barra Superior de Informações
 
 ```js
 .top-info-bar{
@@ -169,6 +187,7 @@ body.ios-pwa{
 
 * Essa implementação é o que garante que os textos da barra superior permaneçam justificados e não estourem o layout definido.
 
+## Campos de Formulário e Interações
 
 ```js
 input, textarea, select{
@@ -185,6 +204,7 @@ input[type="checkbox"]:checked {...}
 ```
 * Checkbox customizada.
 
+## Scrollbar Customizada
 
 ```js
 .slider-container::webkit-scroller{
@@ -197,6 +217,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Estilização da barra de rolagem para ambientes de navegador.
 
+## Modais, Diálogos e Notificações
 
 ```js
 .dialog-container,
@@ -208,6 +229,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Modais, pop-ups (notificações) e diálogos. Aplicados com fundo semitransparente, bordas arredondadas, blur e sombra como muitos apps fazem.
 
+## Cards Interativos Individualizados por Tarefa
 
 ```js
 .task-rect[...]{
@@ -216,6 +238,8 @@ slider-container::webkit-scrollbar-thumb{
 ```
 
 * Implementa cards interativos para cada tipo de tarefa, com esquemas de cores individuais para cada uma. Também aplica animação de hover.
+
+## Tags e Classificações
 
 ```js
 .tag-nivel-1,
@@ -227,6 +251,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Tags e classificações com estilos vizuais personalizados por nível ou origem.
 
+## Switches e Botoões Customizáveis
 
 ```js
 .switch input:checked + .slider{
@@ -236,6 +261,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Switches e botões customizados com comportamento responsivo e animado.
 
+## Organização das Tarefas
 
 ```js
 #lista-tarefas-organizada{
@@ -249,6 +275,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Faz a organização de tarefas em colunas por tipo de tarefa. Aplica uma cor mais clara que contrasta com o fundo geral da aplicação, que é escuro.
 
+## Layout de Gráficos e Painel
 
 ```js
 .grafico-grid{
@@ -261,6 +288,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Layout de gráficos e painel. Aplica a disposição dos gráficos lado a lado.
 
+## Exibição de Anexos
 
 ```js
 #modal-visualizacao-anexo .modal-content pre, iframe {
@@ -273,6 +301,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Implementa a visualização de arquivos e anexos com legibilidade e contraste.
 
+## Avatares e Informações
 
 ```js
 .popup-personagem{
@@ -282,6 +311,7 @@ slider-container::webkit-scrollbar-thumb{
 
 * Exibe informações do usuário, neste caso o personagem.
 
+## Calendário de Tarefas
 
 ```js
 #calendario-container{
