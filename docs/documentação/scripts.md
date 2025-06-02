@@ -90,7 +90,7 @@ Configura a função de swipe:
 - Aplica CSS para adicioanr uma transição animada
 - Atualiza estado da aba ativa<br><br><br>
 ---
-##Manipulação do DOM
+## Manipulação do DOM
 
 ```js
 document.addEventListener('DOMContentLoaded', () => { ... })
