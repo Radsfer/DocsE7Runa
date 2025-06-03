@@ -9,7 +9,7 @@ Essa seção ficará responsável por descrever as atualizações feitas durante
 
 **Responsáveis pela documentação desta versão:** Rafael Adolfo,  Rafael Ferreira e Samuel Silva
 
-Durante a reuinão de acompanhamento da sexta semana, o foco foi voltado para a gameficação do projeto. Foi discutida a possibilidade de se implementar um sistema de inimigos ao R.U.N.A, de forma com que o usuário precise gerenciar a vida de seu personagem e tomar cuidado para não tomar penalidades por não cumprir tarefas. Além disso, a proposta de notificações mobile da última release começou a se encaminhar, mas ainda precisa de melhorias.
+Durante a reunião de acompanhamento da sexta semana, o foco foi voltado para a gameficação do projeto. Foi discutida a possibilidade de se implementar um sistema de inimigos ao R.U.N.A, de forma com que o usuário precise gerenciar a vida de seu personagem e tomar cuidado para não tomar penalidades por não cumprir tarefas. Além disso, a proposta de notificações mobile da última release começou a se encaminhar, mas ainda precisa de melhorias.
 
 A equipe concluiu que o projeto chegou em um estágio de desenvolvimento bom o suficiente para começar a fase de testes. Não houve uma definição formal, mas chegaram a um acordo do uso acompanhado das releases mais recentes para gerar relatórios de erros e bugs a serem consertados.
 
@@ -137,10 +137,10 @@ A seguir, descreve-se a estrutura modular adotada, com os arquivos principais e 
 A modularização proposta permite melhor organização do código, facilita manutenções futuras e oferece flexibilidade para expansão das funcionalidades do sistema. Além disso, cada módulo possui uma responsabilidade única e bem definida, respeitando o princípio de *separação de preocupações*, amplamente adotado no desenvolvimento de aplicações modernas baseadas na arquitetura Web.
 
 Esta versão inicial já possibilitava ao usuário:
-- Logar. Dessa maneira, através da API de Login da Google, tornou-se possível armazenar os dados (tarefas e preferências do usuário).
-- Criar Tarefas (que erão distribuidas entre dois blocos, um para tarefas ainda não realizadas e outro para tarefas realizadas). As tarefas eram contabilizadas como realizadas quando a data selecionada para a mesma era ultrapassada.
-- Modificar e Excluir Tarefas. Havia a possibilidade de modificar a data selecionada para a tarefa, junto a sua descrição, bem como excluir a mesma.
-- Deslocar-se Pela Abas. Tentou-se dentro do _R.U.N.A_ implementar uma interface interativa associada a dois parâmetros: necessidade de organização das tarefas de acordo com a prefência do usuário e priorizar a utilização em dispositivos móveis através de deslocamentos horizontais em abas distintas. Além disso a interface possuia duas barra, uma no topo que demonstrava o nome do usuário, junto a data e um contador relativo a próxima tarefa em tempo.
+- **Logar**. Dessa maneira, através da API de Login da Google, tornou-se possível armazenar os dados (tarefas e preferências do usuário).
+- **Criar Tarefas** (que erão distribuidas entre dois blocos, um para tarefas ainda não realizadas e outro para tarefas realizadas). As tarefas eram contabilizadas como realizadas quando a data selecionada para a mesma era ultrapassada.
+- **Modificar e Excluir Tarefas**. Havia a possibilidade de modificar a data selecionada para a tarefa, junto a sua descrição, bem como excluir a mesma.
+- **Deslocar-se pelas abas**. Tentou-se dentro do _R.U.N.A_ implementar uma interface interativa associada a dois parâmetros: necessidade de organização das tarefas de acordo com a prefência do usuário e priorizar a utilização em dispositivos móveis através de deslocamentos horizontais em abas distintas. Além disso a interface possuia duas barra, uma no topo que demonstrava o nome do usuário, junto a data e um contador relativo a próxima tarefa em tempo.
  
 
 ---
