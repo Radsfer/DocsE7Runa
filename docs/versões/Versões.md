@@ -137,6 +137,7 @@ A seguir, descreve-se a estrutura modular adotada, com os arquivos principais e 
 A modularização proposta permite melhor organização do código, facilita manutenções futuras e oferece flexibilidade para expansão das funcionalidades do sistema. Além disso, cada módulo possui uma responsabilidade única e bem definida, respeitando o princípio de *separação de preocupações*, amplamente adotado no desenvolvimento de aplicações modernas baseadas na arquitetura Web.
 
 Esta versão inicial já possibilitava ao usuário:
+
 - **Logar**. Dessa maneira, através da API de Login da Google, tornou-se possível armazenar os dados (tarefas e preferências do usuário).
 - **Criar Tarefas** (que erão distribuidas entre dois blocos, um para tarefas ainda não realizadas e outro para tarefas realizadas). As tarefas eram contabilizadas como realizadas quando a data selecionada para a mesma era ultrapassada.
 - **Modificar e Excluir Tarefas**. Havia a possibilidade de modificar a data selecionada para a tarefa, junto a sua descrição, bem como excluir a mesma.
