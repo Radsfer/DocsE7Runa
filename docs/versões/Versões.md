@@ -53,7 +53,8 @@ Com isso, as metas da semana foram:
 
 A reunião de acompanhamento da quarta semana foi focada na necessidade de continuar o desenvolvimento das features implementadas na Terceira Release. O ciclo de desenvolvimento anterior terminou com implementação de melhorias visuais, sistemas básicos para gerenciamento de arquivos e abas por tipo de tarefa, além da criação da logo oficial do aplicativo. Portanto, foi decidido manter o foco nas melhorias visuais e de interface, mas sem deixar de adicionar a base de alguns outros sistemas.
 
-As metas estabelecidas para esse ciclo de desenvolvimento foram:
+As metas estabelecidas para esse ciclo de desenvolvimento foram
+
 - **Atualizar interface do usuário**: Parte da prioridade dessa semana em continuar implementando melhorias visuais;
 - **Adcionar sistema de tags**: Embora classificado como baixa prioridade na release passada, foi estudado pelos desenvolvedores que a implementação seria necessária para complementar a base do sistema de classes e a interface visual das tarefas.
 - **Criar a base do sistema de classes**: Permitir com que o usuário use as classes como um foco para tipos de atividades específicas, com bônus de experiência com base nas tags associadas a uma tarefa.
