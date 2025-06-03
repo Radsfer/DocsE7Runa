@@ -3,6 +3,64 @@
 Essa seção ficará responsável por descrever as atualizações feitas durante as semanas com o _Sprint_ relativo ao projeto R.U.N.A. Os registros específicos feitos pelos contribuidores do Projeto podem ser verificados no GitHub: [https://github.com/Ak4ai/TasksApp](Github R.U.N.A).
 
 ---
+## Sexta Release (02/06/25 - 09/06/25)
+
+**Responsáveis pelo desenvolvimento desta versão:** Jader Oliveira, João Pedro Rodrigues, Pedro Augusto e Henrique de Freitas
+
+**Responsáveis pela documentação desta versão:** Rafael Adolfo,  Rafael Ferreira e Samuel Silva
+
+Durante a reuinão de acompanhamento da sexta semana, o foco foi voltado para a gameficação do projeto. Foi discutida a possibilidade de se implementar um sistema de inimigos ao R.U.N.A, de forma com que o usuário precise gerenciar a vida de seu personagem e tomar cuidado para não tomar penalidades por não cumprir tarefas. Além disso, a proposta de notificações mobile da última release começou a se encaminhar, mas ainda precisa de melhorias.
+
+A equipe concluiu que o projeto chegou em um estágio de desenvolvimento bom o suficiente para começar a fase de testes. Não houve uma definição formal, mas chegaram a um acordo do uso acompanhado das releases mais recentes para gerar relatórios de erros e bugs a serem consertados.
+
+Com isso, as metas de desenvolvimento da semana foram:
+
+- **Aprofundar a gameficação:** Isso seria feito através da implementação da mecânica de combate com inimigos, além da adição de mais itens e upgrades para o personagem.
+
+- **Polir as notificações do aplicativo**: Além de continuar o desenvolvimento da release passada, seria preciso estudar maneiras de fazer as notificações funcionarem bem para diferentes tipos de dispositivos (por exemplo, testar as notificações no iPhone).
+
+- **Testar o aplicativo**: Uso das releases recentes por parte dos desenvolvedores para gerar relatórios de erros e bugs, como citado anteriormente.
+
+---
+
+
+## Quinta Release (26/05/25 - 02/06/25)
+
+**Responsáveis pelo desenvolvimento desta versão:** João Pedro Rodrigues, Pedro Augusto e Henrique de Freitas
+
+**Responsáveis pela documentação desta versão:** Jader Oliveira, Rafael Adolfo,  Rafael Ferreira e Samuel Silva
+
+Na reunião de acompanhamento da quinta semana, percebemos que o projeto estava bastante encaminhado, e as propostas para esse ciclo não fogem do que foi proposto nas últimas duas releases. Isso significa que ainda existe foco na interface de usuário e nos sistemas voltados à gameficação do R.U.N.A, seja atualizando os que já começaram a ser implementados como solidificando a base para novos.
+
+Com isso, as metas da semana foram:
+
+- **Continuar atualizações na interface do usuário**: A proposta de vez foi em implementar um calendário com tarefas na página inicial da plataforma.
+
+- **Melhorar a gameficação**: Adicionar novos itens para uso do personagem do usuário, incluindo placeholders de ícones para melhorias na interface visual. Esses novos itens incluem tanto utilitários quanto cosméticos para o personagem.
+
+- **Continuar melhorando o tipo personalizado**: Foi proposto incluir novas customizações de tarefa e mais opções de tipos de frequência nelas.
+
+- **Integrar notificações na versão mobile**: Uma proposta interessante e que foi discutida no acompanhamento: é uma prioridade, mas que provavelmente vai durar mais ciclos de desenvolvimento para ser devidamente immplementada.
+
+---
+
+
+## Quarta Release (19/05/25 - 26/05/25)
+
+**Responsáveis pelo desenvolvimento desta versão:** João Pedro Rodrigues, Pedro Augusto e Henrique de Freitas
+
+**Responsáveis pela documentação desta versão:** Jader Oliveira, Rafael Adolfo,  Rafael Ferreira e Samuel Silva
+
+A reunião de acompanhamento da quarta semana foi focada na necessidade de continuar o desenvolvimento das features implementadas na Terceira Release. O ciclo de desenvolvimento anterior terminou com implementação de melhorias visuais, sistemas básicos para gerenciamento de arquivos e abas por tipo de tarefa, além da criação da logo oficial do aplicativo. Portanto, foi decidido manter o foco nas melhorias visuais e de interface, mas sem deixar de adicionar a base de alguns outros sistemas.
+
+As metas estabelecidas para esse ciclo de desenvolvimento foram:
+- **Atualizar interface do usuário**: Parte da prioridade dessa semana em continuar implementando melhorias visuais;
+- **Adcionar sistema de tags**: Embora classificado como baixa prioridade na release passada, foi estudado pelos desenvolvedores que a implementação seria necessária para complementar a base do sistema de classes e a interface visual das tarefas.
+- **Criar a base do sistema de classes**: Permitir com que o usuário use as classes como um foco para tipos de atividades específicas, com bônus de experiência com base nas tags associadas a uma tarefa.
+- **Melhorar o tipo personalizado**: Focar as melhorias pensando na inclusão do sistema de tags.
+- **Melhorar anexos em tarefas**: Foco em melhorar a integração do Firebase com o restante do sistema para anexar as tarefas.
+
+---
 
 ## Terceira Release (12/05/25 - 19/05/25)
 
