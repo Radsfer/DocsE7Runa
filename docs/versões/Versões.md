@@ -21,6 +21,48 @@ Com isso, as metas de desenvolvimento da semana foram:
 
 - **Testar o aplicativo**: Uso das releases recentes por parte dos desenvolvedores para gerar relatórios de erros e bugs, como citado anteriormente.
 
+### 📄 Changelog da Release:
+
+#### Implementação do multiplayer (sistema de amizade):
+
+- Início da implementação do ID para o multiplayer
+- Criação do sistema de amizade
+- Modal de amigos e possibilidade de desfazer amizade
+- Nova info dos amigos
+
+#### Organizações visuais:
+
+- Ícone de carregando interface
+- Organização de interface geral
+- Organização de interface de inventário
+- Atualização de ícones
+- ID simplificado na topbar e com mensagem nas configurações
+
+#### Implementação de inimigos e combate: 
+
+- O usuário causa dano ao inimigo completar tarefas 
+- Inimigos causam dano quando tarefas expiram 
+- O usuário recebe grande quantidade de XP e moedas ao derrotar um inimigo
+- Diversificação de inimigos
+- Sistema de progressão de inimigos
+- Aba de combate contra Inimigos
+- Adição da mecânica de itens no combate
+- Ajuste na defesa do combate e seção de proteção na loja
+
+#### Novas mecânicas e features adicionais:
+
+- XP agora é carregado no Firestore
+- Adição de novas Classes
+- Reimplementação do bônus de XP das Classes
+- Adição de Cooldown para Mudança + Item que retira Cooldown
+- Implementação de missões diárias
+
+#### Correções de bugs:
+
+- Correção de bugs na UI
+- Correção de bugs no sistema das moedas
+- Algumas correções de bugs no sistema de amizade
+
 ---
 
 
