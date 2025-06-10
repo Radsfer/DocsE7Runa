@@ -3,6 +3,31 @@
 Essa seção ficará responsável por descrever as atualizações feitas durante as semanas com o _Sprint_ relativo ao projeto R.U.N.A. Os registros específicos feitos pelos contribuidores do Projeto podem ser verificados no GitHub: [https://github.com/Ak4ai/TasksApp](Github R.U.N.A).
 
 ---
+
+
+## Sétima Release (09/06/25 - 16/06/25)
+
+**Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Jader Oliveira e Pedro Augusto
+
+**Responsáveis pela documentação desta versão:** João Pedro Rodrigues, Rafael Adolfo, Rafael Ferreira e Samuel Silva
+
+No preparo para a release, ficou claro que as metas da última release foram mais do que cumpridas, features extras foram implementadas e foi a semana mais bem documentada. Por isso, revisamos o que fizemos de mais importante na última semana.
+
+Além disso, planejamos em manter o foco em finalizar as features funcionais estabelecidas para depois focar inteiramente na UI do app, mas também discutimos feedbacks na interface para as próximas versões (especialmente no ambiente mobile), como a possibilidade de adicionar uma barra lateral. Também discutimos como adicionar informações importantes e tutoriais dentro do app e planejamos criar artes oficiais para o R.U.N.A para o momento de foco na UI.
+
+***Metas da Semana:***
+
+* **Avançar mais o desenvolvimento das features funcionais**
+
+* **Continuar o desenvolvimento do sistema de amizade**
+
+* **Terminar o sistema de combate**
+
+* **Estudar como implementar tutoriais in-app**
+
+---
+
+
 ## Sexta Release (02/06/25 - 09/06/25)
 
 **Responsáveis pelo desenvolvimento desta versão:** Jader Oliveira, João Pedro Rodrigues, Pedro Augusto e Henrique de Freitas
