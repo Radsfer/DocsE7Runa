@@ -6,7 +6,7 @@
 ```js
 import { auth } from './auth.js';
 ```
-- Gerencia a autênticação do usuário via Firebase
+- Gerencia a autenticação do usuário via Firebase
   <br><br><br>
 
 ```js
