@@ -75,21 +75,29 @@ const frasesPorClasse = {...};
 3. **`async function criarRecorrentePersonalizada() {...}`**
 ---
 
-## 5. Manipulação de XP e Nível
+## 5. Sistema de Progresso
+### XP e Níveis
 
 ```js
-function atualizarXP(tarefasConcluidas) { … }
+function xpNecessarioParaNivel() {...}
+async function atualizarXP() {...}
+function calcularBonusXP() {...}
 ```
+### Moedas e Inventário
 
-* Cada tarefa concluída rende **10 XP**.
-* Nível = ⌊(XP\_total / 100)⌋ + 1.
-* Barra de progresso e texto são atualizados no elemento `.xp-info`.
+```js
+async function atualizarMoedas() {...}
+async function carregarInventario() {...}
+async function comprarItem() {...}
+async function venderItem() {...}
+```
 
 ---
 
 ## 6. Limpeza e Organização de Cards
 
 * **`limparCards()`**: reseta o conteúdo dos containers `.purple-card` (expiradas) e `.blue-card` (concluídas).
+
 * **`adicionarNaCard(tarefa, cardClass)`**: adiciona um `<p>` com descrição, data/hora formatadas e botão de exclusão.
 
 ---
