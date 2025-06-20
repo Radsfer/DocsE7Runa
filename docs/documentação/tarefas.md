@@ -95,7 +95,7 @@ async function venderItem() {...}
 * Implementação do sistema de inventário e a relação dos itens com outros componentes do software
 ---
 
-## 6. Limpeza e Organização de Cards
+## 7. Limpeza e Organização de Cards
 
 * **`limparCards()`**: reseta o conteúdo dos containers `.purple-card` (expiradas) e `.blue-card` (concluídas).
 
