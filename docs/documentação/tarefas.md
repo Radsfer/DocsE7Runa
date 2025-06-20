@@ -103,12 +103,14 @@ async function venderItem() {...}
 
 ---
 
-## 7. Operações no Firestore
+## 8. Operações no Firestore
+```js
+atualizarTarefaNoFirestore(id, descricao, dataLimite){...};
+salvarXPNoFirestore(classeAtiva){...};
+excluirTarefaDoFirestore(id){...};
+```
 
-* **`atualizarTarefaNoFirestore(id, descricao, dataLimite)`**
-* **`excluirTarefaDoFirestore(id)`**
-
-  * Obtêm o `uid` do usuário atual, referenciam o documento e aplicam atualização ou exclusão.
+  * Obtêm o `uid` do usuário atual, referenciam o documento e executam o comando em questão.
 
 ---
 
