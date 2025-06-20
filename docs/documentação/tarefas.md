@@ -41,13 +41,13 @@ let tarefasConcluidas = [];
 ## 4. Estrutura de Dados
 
 ```js
-const subTagsPorCategoria = {...};
-const ITENS_CONFIG = {...};
-const NOMES_ITENS = {...};
-const VALORES_ITENS = {...};
-const classesJogador = {...};
-const avataresPorClasse = {...};
-const frasesPorClasse = {...};
+const subTagsPorCategoria = {...}
+const ITENS_CONFIG = {...}
+const NOMES_ITENS = {...}
+const VALORES_ITENS = {...}
+const classesJogador = {...}
+const avataresPorClasse = {...}
+const frasesPorClasse = {...}
 ```
 * Estruturas que armazenam possíveis valores sobre os respectivos itens
 
@@ -105,9 +105,9 @@ async function venderItem() {...}
 
 ## 8. Operações no Firestore
 ```js
-atualizarTarefaNoFirestore(id, descricao, dataLimite){...};
-salvarXPNoFirestore(classeAtiva){...};
-excluirTarefaDoFirestore(id){...};
+atualizarTarefaNoFirestore(id, descricao, dataLimite){...}
+salvarXPNoFirestore(classeAtiva){...}
+excluirTarefaDoFirestore(id){...}
 ```
 
   * Obtêm o `uid` do usuário atual, referenciam o documento e executam o comando em questão.
@@ -130,35 +130,42 @@ function renderizarCalendario() {...}
 ## 10. Popups e Modais
 
 ```js
-function mostrarPopup() {...};
-function mostrarPopupPersonagem() {...};
-function abrirModalVisualizacaoAnexo() {...};
-function abrirModalDetalhe() {...};
+function mostrarPopup() {...}
+function mostrarPopupPersonagem() {...}
+function abrirModalVisualizacaoAnexo() {...}
+function abrirModalDetalhe() {...}
 ```
 
 * Gerencia Popups e modais necessários
 ---
 
-## 11. Tarefas Periódicas
+## 11. Utilitários
+### Manipulação de Datas
 
-* **`ajustarRecurrentes(tarefas)`**
+```js
+function getInicioDoDia() {...}
+function getFimDaSemana() {...}
+function calcularTempoRestante() {...}
+```
 
-  * Para cada tarefa periódica expirada e não-finalizada, calcula próximo prazo (diário, semanal, mensal ou customizado), cria nova entrada e marca a antiga como `finalizada`.
-* **`processarTarefaPeriodicaAoMarcar(t)`**
+### Helpers
 
-  * Similar, mas disparado ao concluir manualmente (listener externo).
-
+```js
+function isIOSDevice() {...}
+function fileToBase64() {...}
+function limparCards() {...}
+```
 ---
 
-## 12. Interações Extras e Ordenação
+## 12. Sistema de Classes
 
-* **Clique em `.next-event`** abre modal com listas organizadas de:
+### Gerenciamento
 
-  * Tarefas vencidas, futuras e concluídas.
-  * Concatena HTML via templates literais.
-* **Ordenar por tipo/tempo**
-
-  * Botões `#ordenar-tipo` e `#ordenar-tempo` chamam `mostrarTarefasOrganizadas(criterio)`, que reagrupa ou reordena `tarefasFuturas` e atualiza o modal.
+```js
+function preencherClasseSelectorComBonus() {...}
+function atualizarVisualClasse() {...}
+function personagemFalaAleatoriamente() {...}
+```
 
 ---
 
