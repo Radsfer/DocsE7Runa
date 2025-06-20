@@ -75,7 +75,7 @@ const frasesPorClasse = {...};
 3. **`async function criarRecorrentePersonalizada() {...}`**
 ---
 
-## 5. Sistema de Progresso
+## 6. Sistema de Progresso
 ### XP e Níveis
 
 ```js
