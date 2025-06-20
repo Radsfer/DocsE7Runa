@@ -43,7 +43,13 @@ let tarefasConcluidas = [];
 ```js
 const subTagsPorCategoria = {...};
 const ITENS_CONFIG = {...};
+const NOMES_ITENS = {...};
+const VALORES_ITENS = {...};
+const classesJogador = {...};
+const avataresPorClasse = {...};
+const frasesPorClasse = {...};
 ```
+* Estruturas que armazenam informações sobre os respectivos itens
 
 ## 4. Fluxo de Carregamento e Renderização
 
