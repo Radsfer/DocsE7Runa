@@ -51,7 +51,9 @@ const frasesPorClasse = {...};
 ```
 * Estruturas que armazenam possíveis valores sobre os respectivos itens
 
-## 4. Fluxo de Carregamento e Renderização
+## 5. Gerenciamento de tarefas
+
+### Funções principais
 
 1. **`async function carregarTarefas()`**
 
@@ -60,6 +62,17 @@ const frasesPorClasse = {...};
 
    * Encapsula a criação de elementos DOM para cada tarefa (detalhes omitidos).
 
+### Operações básicas
+
+1. **`async function adicionarTarefa() {...}`**
+2. **`async function atualizarTarefaNoFirestore() {...}`**
+3. **`async function excluirTarefaDoFirestore() {...}`**
+4. **`function abrirModalDetalhe() {...}`**
+
+### Tarefas Recorrentes
+1. **`async function ajustarRecurrentes() {...}`**
+2. **`async function processarTarefaPeriodicaAoMarcar() {...}`**
+3. **`async function criarRecorrentePersonalizada() {...}`**
 ---
 
 ## 5. Manipulação de XP e Nível
