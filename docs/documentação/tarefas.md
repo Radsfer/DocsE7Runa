@@ -117,34 +117,26 @@ excluirTarefaDoFirestore(id){...};
 ## 9. Calendário
 
 ```js
+function atualizarDataAtual() { … }
 function renderizarCalendario() {...}
 ```
 
+** Exibe a data no formato “📅 Dia da Semana, DD/MM/AAAA” no elemento `.current-day`.
 * Renderiza um calendário interativo que exibe visualmente as tarefas do usuário com estilos diferenciados por status e tipo.
 * Preenche células vazias para alinhamento
 * Gera células para cada dia do mês
 * Adiciona eventos de clique para interatividade
-
-## 9. Contador para Próxima Tarefa
-
-```js
-function atualizarContadorProximaTarefa() { … }
-```
-
-* Executado a cada segundo via `setInterval`.
-* Move tarefas vencidas de `tarefasFuturas` → `tarefasExpiradas`, atualiza DOM.
-* Ordena `tarefasFuturas` e calcula diferença de tempo para exibir no elemento `.next-event`.
-
----
-
-## 10. Atualização da Data Atual
+ 
+## 10. Popups e Modais
 
 ```js
-function atualizarDataAtual() { … }
+function mostrarPopup() {...};
+function mostrarPopupPersonagem() {...};
+function abrirModalVisualizacaoAnexo() {...};
+function abrirModalDetalhe() {...};
 ```
 
-* Exibe no formato “📅 Dia da Semana, DD/MM/AAAA” no elemento `.current-day`.
-
+* Gerencia Popups e modais necessários
 ---
 
 ## 11. Tarefas Periódicas
