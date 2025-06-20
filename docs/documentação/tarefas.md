@@ -114,16 +114,16 @@ excluirTarefaDoFirestore(id){...};
 
 ---
 
-## 8. Modais de Edição e Detalhe
+## 9. Calendário
 
 ```js
-function abrirModalDetalhe(tarefa) { … }
+function renderizarCalendario() {...}
 ```
 
-* Exibe campos para editar descrição, prazo e tipo de tarefa.
-* Botões “Salvar” e “Excluir” disparam as funções de CRUD e recarregam a lista.
-
----
+* Renderiza um calendário interativo que exibe visualmente as tarefas do usuário com estilos diferenciados por status e tipo.
+* Preenche células vazias para alinhamento
+* Gera células para cada dia do mês
+* Adiciona eventos de clique para interatividade
 
 ## 9. Contador para Próxima Tarefa
 
