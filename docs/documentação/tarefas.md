@@ -49,7 +49,7 @@ const classesJogador = {...};
 const avataresPorClasse = {...};
 const frasesPorClasse = {...};
 ```
-* Estruturas que armazenam informações sobre os respectivos itens
+* Estruturas que armazenam possíveis valores sobre os respectivos itens
 
 ## 4. Fluxo de Carregamento e Renderização
 
