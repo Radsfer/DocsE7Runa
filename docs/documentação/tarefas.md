@@ -22,21 +22,28 @@ import { atacarInimigo, inimigoAtaca, darRecompensa, atualizarProgressoMissoes, 
 
 ---
 
-## 3. Estado Global
+## 3. Variáveis Globais
 
 ```js
+let dropdownAcoesAberto = null;
 let carregandoTarefas = false;
-let tempoMaisRecente     = null;
-let intervaloContador    = null;
-let tarefasFuturas       = [];
-let tarefasExpiradas     = [];
-let tarefasConcluidas    = [];
+let tempoMaisRecente = null;
+let intervaloContador = null;
+let tarefasFuturas = [];
+let tarefasExpiradas = [];
+let tarefasConcluidas = [];
 ```
 
 * Flags de carregamento e referência ao próximo prazo.
-* Três arrays para categorizar tarefas conforme o seu estado.
-
+* Arrays para categorizar tarefas conforme o seu estado.
 ---
+
+## 4. Estrutura de Dados
+
+```js
+const subTagsPorCategoria = {...};
+const ITENS_CONFIG = {...};
+```
 
 ## 4. Fluxo de Carregamento e Renderização
 
