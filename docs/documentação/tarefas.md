@@ -2,7 +2,7 @@
 
 ## 1. Visão Geral
 
-O módulo **`tarefas.js`** implementa a lógica de carregamento, exibição e manipulação de tarefas de um usuário, integrando-se ao Firebase Firestore para persistência de dados e ao sistema de autenticação do Firebase Auth. Seu foco principal é apresentar listas de tarefas futuras, expiradas e concluídas, fornecer um contador regressivo para o próximo evento, além de tratar tarefas periódicas.
+O módulo **`tarefas.js`** implementa a lógica de carregamento, exibição e manipulação de tarefas de um usuário, além da mecânica de gameficação, integrando-se ao Firebase Firestore para persistência de dados e ao sistema de autenticação do Firebase Auth.
 
 ---
 
@@ -10,16 +10,15 @@ O módulo **`tarefas.js`** implementa a lógica de carregamento, exibição e ma
 
 ```js
 import { auth } from './auth.js';
-import { db }   from './firebase-config.js';
-import {
-  collection, getDocs, getDoc, doc,
-  updateDoc, deleteDoc, Timestamp, addDoc
-} from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
+import { db } from './firebase-config.js';
+import { collection, query, where, getDocs, getDoc, doc, updateDoc, deleteDoc, Timestamp, addDoc, increment, arrayUnion, setDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
+import { atacarInimigo, inimigoAtaca, darRecompensa, atualizarProgressoMissoes, mostrarMissoesDiarias } from './script.js';
 ```
 
 * **`auth`**: objeto de autenticação do Firebase.
 * **`db`**: instância do Firestore.
-* **Firestore SDK**: funções para CRUD e manipulação de `Timestamp`.
+* **` imports from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js'`**: métodos do Firebase para gerenciar documentos
+* **` imports from 'script.js'`**: gerenciamento de missões e elementos PVE
 
 ---
 
