@@ -92,19 +92,17 @@ await addDoc(collection(db, "scheduledNotifications"), { ... });
 * Sistema de notificações entregues ao usuário nas datas especificadas.
 ---
 
-## 8. 
+## 8. Mensagens e Modais
 
-## 3. Funções utilizadas
-
-### 3.1. Mensagens
 ```js
+const filaDeMensagens = []
 function mostrarMensagem(mensagem)
 ```
 - Recebe uma mensagem como parâmetro
 - Exibe a mensagem ao usuário através do modal
 - Utiliza do blur quando há um plano de fundo
-- Garante que uma mensagem não sobreponha outra
-  <br><br><br>
+- Garante que uma mensagem não sobreponha outra.
+
 ```js
 function exibirProximaMensagem()
 ```
@@ -112,9 +110,32 @@ function exibirProximaMensagem()
 - Verifica se há mensagens na fila
 - Obtém a primeira mensagem da fila, a exibe e retira da fila
 - Se certifica se há mais mensagens a serem exibidas depois do usuário fechar o diálogo
-- Exibe a próxima mensagem da fila, caso haja
-  <br><br><br>
+- Exibe a próxima mensagem da fila, caso haja.
 
+```js
+function abrirModalTrocarMissao(missao, idx, uid)
+```
+
+* Gerencia o processo de troca de missões a partir de um modal.
+
+---
+
+## 9. Blur
+
+```js
+function exibirBlurBackground()
+```
+- Aplica blur em segundo plano
+
+```js
+function esconderBlurBackground()
+```
+- Remove blur
+
+---
+
+
+## 3. Funções utilizadas
 ### 3.2. Blur
 
 ```js
