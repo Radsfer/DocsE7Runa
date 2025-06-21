@@ -71,15 +71,16 @@ function playEspecialAttackAnimation(canvasId = 'especial-attack-canvas');
 
   ---
 
-## 6. Carrosséis e Sliders
+## 6. Adicionar Tarefas
 
 ```js
-function setupGraficoCarousel();
-function setupTarefasSliderCarousel();
-function atualizarVisibilidadeTarefasSlider();
+async function adicionarTarefa(nome, descricao, dataLimite)
 ```
-* Sistemas de carrossel para gráficos e tarefas com controles responsivos.
-
+- Verifica se o usuário já é autenticado
+- Valida a estrutura de dados da tarefa
+- Cria uma tarefa e age conforme o seu tipo
+- Armazena a tarefa no banco de dados
+- Recarrega a lista de tarefas
 ---
 
 ## 7. Notificações
@@ -160,20 +161,20 @@ function fileToBase64(file)
 
 ---
 
-## 3. Funções utilizadas
-
-### 3.6. Adicionar tarefas
+## 12. Carrosséis e Sliders
 
 ```js
-async function adicionarTarefa(descricao, dataLimite)
-function ajustarWrappers()
-````
-- Verifica se o usuário já é autenticado
-- Valida a estrutura de dados da tarefa
-- Cria uma tarefa e age conforme o seu tipo
-- Armazena a tarefa no banco de dados
-- Recarrega a lista de tarefas
-  <br><br><br>
+function setupGraficoCarousel();
+function setupTarefasSliderCarousel();
+function atualizarVisibilidadeTarefasSlider();
+```
+* Sistemas de carrossel para gráficos e tarefas com controles responsivos.
+
+---
+
+
+## 3. Funções utilizadas
+
 
 ### 3.7. Função de Swipe
 
