@@ -13,9 +13,9 @@ import { auth } from './auth.js';
   <br><br><br>
 
 ```js
-import { db } from './firebase-config.js';
+import { db, carregarMeuSimpleID, listarAmigosAceitos } from './firebase-config.js';
 ```
-- Representa a instância configurada do Firestore (banco de dados do Firebase)
+- Importa a instância configurada do Firestore, além de funcionalidades referentes a interações sociais do software.
   <br><br><br>
 
 ```js
