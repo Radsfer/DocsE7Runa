@@ -140,6 +140,7 @@ function abrirModalDetalhe() {...}
 ---
 
 ## 11. Utilitários
+
 ### Manipulação de Datas
 
 ```js
@@ -159,24 +160,40 @@ function limparCards() {...}
 
 ## 12. Sistema de Classes
 
-### Gerenciamento
-
 ```js
 function preencherClasseSelectorComBonus() {...}
-function atualizarVisualClasse() {...}
-function personagemFalaAleatoriamente() {...}
 ```
-
----
-
-## 13. Função Auxiliar de Tempo
+Cria opções formatadas para cada classe com:
+- Nome da classe;
+- Categorias que recebem bônus
 
 ```js
-function calcularTempoRestante(dataLimite) { … }
+function atualizarVisualClasse() {...}
 ```
+* Aplica efeitos visuais da classe selecionada
 
-* Retorna string “X dias, Y horas e Z minutos” ou “Já passou”.
+```js
+function personagemFalaAleatoriamente() {...}
+```
+* Personagem interage com frases aleatórias em determinados contextos
 
+```js
+function atualizarInfoCooldown() {...}
+```
+* Define um tempo mínimo de 14 dias para selecionar uma nova classe
+---
 
+## 13. Exportações
+
+```js
+export {
+  carregarTarefas,
+  tempoMaisRecente,
+  atualizarDataAtual,
+  calcularDefesa,
+  mostrarPopup,
+  carregarInventario
+}
+```
 ---
 
