@@ -173,12 +173,10 @@ function atualizarVisibilidadeTarefasSlider();
 ---
 
 
-## 3. Funções utilizadas
-
-
-### 3.7. Função de Swipe
+## 13. Função de Swipe
 
 ```js
+const minSwipeDistance = 100;
 function atualizarVisibilidadeAppBody()
 function handleSwipe()
 ```
@@ -189,7 +187,10 @@ Configura a função de swipe:
 - Aplica CSS para adicionar uma transição animada
 - Atualiza estado da aba ativa
 - Configura a visibilidade de elementos
-  <br><br><br>
+
+---
+
+
 
 ## 4. Manipulação do DOM
 
