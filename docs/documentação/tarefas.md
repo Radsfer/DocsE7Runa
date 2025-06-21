@@ -17,7 +17,7 @@ import { atacarInimigo, inimigoAtaca, darRecompensa, atualizarProgressoMissoes, 
 
 * **`auth`**: objeto de autenticação do Firebase.
 * **`db`**: instância do Firestore.
-* **` imports from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js'`**: métodos do Firebase para gerenciar documentos
+* **` imports from 'firebase-firestore.js'`**: métodos do Firebase para gerenciar documentos
 * **` imports from 'script.js'`**: gerenciamento de missões e elementos PVE
 
 ---
