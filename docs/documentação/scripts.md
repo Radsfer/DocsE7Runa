@@ -13,36 +13,12 @@ import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 import { doc, collection, addDoc, getDocs, Timestamp, deleteDoc, serverTimestamp, setDoc, getDoc, increment } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
 import { carregarTarefas,mostrarPopup,carregarInventario, calcularDefesa } from './tarefas.js';
 ```
+* **`auth`**: objeto de autenticação do Firebase.
+* **`imports from firebase-config`**: instância configurada do Firestore e funcionalidades referentes a interações sociais do software.
+* **`imports from firebase-auth.js`**: métodos do Firebase para gerenciar autenticação
+* **`imports from firebase-firestore`**: étodos do Firebase para gerenciar documentos
+**`imports from tarefas.js`**: auxílio na criação de tarefas, popups, sistema de inventário e PVE.
 
-- Gerencia a autenticação do usuário via Firebase
-  <br><br><br>
-
-```js
-import { db, carregarMeuSimpleID, listarAmigosAceitos } from './firebase-config.js';
-```
-- Importa a instância configurada do Firestore, além de funcionalidades referentes a interações sociais do software.
-  <br><br><br>
-
-```js
-import { collection, addDoc, getDocs, Timestamp, deleteDoc } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
-```
-Importa algumas funções como:
-- `collection`: referencia uma coleção no Firestore
-- `addDoc`: adiciona novos documentos
-- `getDocs`: busca documentos existentes
-- `Timestamp`: manipula datas no formato Firebase
-- `deleteDoc`: usado para excluir tarefas
-  <br><br><br>
-
-```js
-import { carregarTarefas,mostrarPopup,carregarInventario } from './tarefas.js';
-
-```
-
-Importa funções do arquivo 'tarefas.js':
-- `carregarTarefas()`
-- `mostrarPopup()`
-- `carregarInventario()`
 ---
 
 ## 3. Funções utilizadas
