@@ -67,7 +67,7 @@ function atualizarBotaoEspecial()
 function playEspecialAttackAnimation(canvasId = 'especial-attack-canvas');
 ```
 
-* Sistema de ataques com animações e efeitos especiais
+* Sistema de ataques com animações e efeitos especiais.
 
   ---
 
@@ -78,11 +78,21 @@ function setupGraficoCarousel();
 function setupTarefasSliderCarousel();
 function atualizarVisibilidadeTarefasSlider();
 ```
-* Sistemas de carrossel para gráficos e tarefas com controles responsivos
+* Sistemas de carrossel para gráficos e tarefas com controles responsivos.
 
 ---
 
-## 7. 
+## 7. Notificações
+
+```js
+const notificacoes = ...;
+await addDoc(collection(db, "scheduledNotifications"), { ... });
+```
+
+* Sistema de notificações entregues ao usuário nas datas especificadas.
+---
+
+## 8. 
 
 ## 3. Funções utilizadas
 
