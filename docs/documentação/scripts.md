@@ -64,13 +64,25 @@ export async function adicionarAtaqueExtra(uid, quantidade = 1)
 export async function atacarInimigoExtra(dano = 10)
 export async function ataqueEspecialInimigo()
 function atualizarBotaoEspecial()
+function playEspecialAttackAnimation(canvasId = 'especial-attack-canvas');
 ```
 
 * Sistema de ataques com animações e efeitos especiais
 
   ---
 
-## 6. 
+## 6. Carrosséis e Sliders
+
+```js
+function setupGraficoCarousel();
+function setupTarefasSliderCarousel();
+function atualizarVisibilidadeTarefasSlider();
+```
+* Sistemas de carrossel para gráficos e tarefas com controles responsivos
+
+---
+
+## 7. 
 
 ## 3. Funções utilizadas
 
