@@ -1,12 +1,12 @@
 
 # 📄 Arquivo `script.js`
 
-## 1. Visão Geral
+## 🧩 1. Visão Geral
   O arquivo 'script.js' é responsável por implementar scripts necessários em outras partes do projeto.
 
   ---
   
-## 2. Dependências e Importações
+## 🔗 2. Dependências e Importações
 
 ```js
 import { auth } from './auth.js';
@@ -23,7 +23,7 @@ import { carregarTarefas,mostrarPopup,carregarInventario, calcularDefesa } from 
 
 ---
 
-## 3. Sistema de Missões Diárias
+## 🎯 3. Sistema de Missões Diárias
 
 ```js
 const MISSOES_DIARIAS = [ ... ];
@@ -38,7 +38,7 @@ export async function atualizarProgressoMissoes(uid, tipoTarefa, xpGanho = 0)
 
 ---
 
-## 4. Sistema de inimigos (PVE)
+## 🐉 4. Sistema de inimigos (PVE)
 
 ```js
 const INIMIGOS = [ ... ]
@@ -57,7 +57,7 @@ async function perderXP(uid, xp)
 
 ---
 
-## 5. Ataques Especiais
+## ✨ 5. Ataques Especiais
 
 ```js
 export async function adicionarAtaqueExtra(uid, quantidade = 1)
@@ -71,7 +71,7 @@ function playEspecialAttackAnimation(canvasId = 'especial-attack-canvas');
 
   ---
 
-## 6. Adicionar Tarefas
+## 📝 6. Adicionar Tarefas
 
 ```js
 async function adicionarTarefa(nome, descricao, dataLimite)
@@ -83,7 +83,7 @@ async function adicionarTarefa(nome, descricao, dataLimite)
 - Recarrega a lista de tarefas
 ---
 
-## 7. Notificações
+## 🔔 7. Notificações
 
 ```js
 const notificacoes = ...;
@@ -93,7 +93,7 @@ await addDoc(collection(db, "scheduledNotifications"), { ... });
 * Sistema de notificações entregues ao usuário nas datas especificadas.
 ---
 
-## 8. Mensagens, Modais e Popups
+## 💬 8. Mensagens, Modais e Popups
 
 ```js
 const filaDeMensagens = []
@@ -127,7 +127,7 @@ function mostrarPopup(mensagem, duracao = 2000)
 
 ---
 
-## 9. Blur
+## 🌫️ 9. Blur
 
 ```js
 function exibirBlurBackground()
@@ -141,7 +141,7 @@ function esconderBlurBackground()
 
 ---
 
-## 10. Verificação de sistema operacional
+## 📱 10. Verificação de sistema operacional
 
 ```js
 function isIOSDevice()
@@ -151,7 +151,7 @@ function isIOSDevice()
 
 ---
 
-## 11. Anexação de Arquivos
+## 📎 11. Anexação de Arquivos
 
 ```js
 function fileToBase64(file)
@@ -161,7 +161,7 @@ function fileToBase64(file)
 
 ---
 
-## 12. Carrosséis e Sliders
+## 🎠 12. Carrosséis e Sliders
 
 ```js
 function setupGraficoCarousel();
@@ -173,7 +173,7 @@ function atualizarVisibilidadeTarefasSlider();
 ---
 
 
-## 13. Função de Swipe
+## ↔️ 13. Função de Swipe
 
 ```js
 const minSwipeDistance = 100;
@@ -192,7 +192,7 @@ Configura a função de swipe:
 
 
 
-## 14. Manipulação do DOM
+## 🧭 14. Manipulação do DOM
 
 ### 14.1. Criação de Tarefas
 ```js
