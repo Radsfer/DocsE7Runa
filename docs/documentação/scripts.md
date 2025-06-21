@@ -92,7 +92,7 @@ await addDoc(collection(db, "scheduledNotifications"), { ... });
 * Sistema de notificações entregues ao usuário nas datas especificadas.
 ---
 
-## 8. Mensagens e Modais
+## 8. Mensagens, Modais e Popups
 
 ```js
 const filaDeMensagens = []
@@ -118,6 +118,12 @@ function abrirModalTrocarMissao(missao, idx, uid)
 
 * Gerencia o processo de troca de missões a partir de um modal.
 
+```js
+function mostrarPopup(mensagem, duracao = 2000)
+```
+- Recebe uma mensagem e uma duração (em ms) como parâmetro
+- Exibe a janela com a mensagem pela duração escolhida
+
 ---
 
 ## 9. Blur
@@ -134,29 +140,10 @@ function esconderBlurBackground()
 
 ---
 
+## 10. 
 
 ## 3. Funções utilizadas
-### 3.2. Blur
 
-```js
-function exibirBlurBackground()
-```
-- Aplica blur em segundo plano
-  <br><br><br>
-
-```js
-function esconderBlurBackground()
-```
-- Remove blur
-  <br><br><br>
-
-### 3.3. Pop Up
-```js
-function mostrarPopup(mensagem, duracao = 2000)
-```
-- Recebe uma mensagem e uma duração (em ms) como parâmetro
-- Exibe a janela com a mensagem pela duração escolhida
-  <br><br><br>
 
 ### 3.4. Verificação de sistema operacional
 ```js
