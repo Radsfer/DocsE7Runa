@@ -140,18 +140,17 @@ function esconderBlurBackground()
 
 ---
 
-## 10. 
+## 10. Verificação de sistema operacional
 
-## 3. Funções utilizadas
-
-
-### 3.4. Verificação de sistema operacional
 ```js
 function isIOSDevice()
 ```
 - Identifica o navegador e o sistema operacional do usuário
 - Retorna 'true' se é um dispositivo IOS
-  <br><br><br>
+
+---
+
+## 3. Funções utilizadas
 
 ### 3.5. Anexação de arquivos
 ```js
