@@ -4,11 +4,16 @@
 ## 1. Visão Geral
   O arquivo 'script.js' é responsável por implementar scripts necessários em outras partes do projeto.
   
-## 2. Módulos Importados
+## 2. Dependências e Importações
 
 ```js
 import { auth } from './auth.js';
+import { db, carregarMeuSimpleID, listarAmigosAceitos } from './firebase-config.js';
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+import { doc, collection, addDoc, getDocs, Timestamp, deleteDoc, serverTimestamp, setDoc, getDoc, increment } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
+import { carregarTarefas,mostrarPopup,carregarInventario, calcularDefesa } from './tarefas.js';
 ```
+
 - Gerencia a autenticação do usuário via Firebase
   <br><br><br>
 
