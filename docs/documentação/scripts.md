@@ -3,6 +3,8 @@
 
 ## 1. Visão Geral
   O arquivo 'script.js' é responsável por implementar scripts necessários em outras partes do projeto.
+
+  ---
   
 ## 2. Dependências e Importações
 
@@ -20,6 +22,37 @@ import { carregarTarefas,mostrarPopup,carregarInventario, calcularDefesa } from 
 **`imports from tarefas.js`**: auxílio na criação de tarefas, popups, sistema de inventário e PVE.
 
 ---
+
+## 3. Sistema de Missões Diárias
+
+```js
+const MISSOES_DIARIAS = [ ... ];
+async function sortearMissoesDiarias(uid)
+async function carregarMissoesDiarias(uid)
+function abrirModalTrocarMissao(missao, idx, uid)
+async function trocarMissaoDiaria(uid, missaoId)
+async function mostrarMissoesDiarias(uid)
+export async function atualizarProgressoMissoes(uid, tipoTarefa, xpGanho = 0)
+```
+* Implementa a lógica de missões diárias por usuário, as quais são aleatórias e concedem recompensas adicionais que se intercalam com o sistema de progressão e PVE.
+
+---
+
+## 4. Sistema de inimigos (PVE)
+
+```js
+const INIMIGOS = [ ... ]
+function getNovoInimigo(indice = 0)
+async function carregarInimigoFirestore(uid)
+async function salvarInimigoFirestore(uid, inimigo)
+async function atualizarUIInimigo()
+async function atualizarProgressoDanoInimigo(uid, dano)
+async function atacarInimigo(dano = 10)
+async function inimigoAtaca()
+async function darRecompensa(uid, xp, moedas)
+async function perderXP(uid, xp)
+```
+
 
 ## 3. Funções utilizadas
 
