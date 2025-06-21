@@ -1,12 +1,12 @@
 # 📄 Arquivo `tarefas.js`
 
-## 1. Visão Geral
+## 🧩 1. Visão Geral
 
 O módulo **`tarefas.js`** implementa a lógica de carregamento, exibição e manipulação de tarefas de um usuário, além da mecânica de gameficação, integrando-se ao Firebase Firestore para persistência de dados e ao sistema de autenticação do Firebase Auth.
 
 ---
 
-## 2. Dependências e Importações
+## 🔗 2. Dependências e Importações
 
 ```js
 import { auth } from './auth.js';
@@ -22,7 +22,7 @@ import { atacarInimigo, inimigoAtaca, darRecompensa, atualizarProgressoMissoes, 
 
 ---
 
-## 3. Variáveis Globais
+## 🏷️ 3. Variáveis Globais
 
 ```js
 let dropdownAcoesAberto = null;
@@ -38,7 +38,7 @@ let tarefasConcluidas = [];
 * Arrays para categorizar tarefas conforme o seu estado.
 ---
 
-## 4. Estrutura de Dados
+## 🗂️ 4. Estrutura de Dados
 
 ```js
 const subTagsPorCategoria = {...}
@@ -51,7 +51,7 @@ const frasesPorClasse = {...}
 ```
 * Estruturas que armazenam possíveis valores sobre os respectivos itens
 
-## 5. Gerenciamento de tarefas
+## ✅ 5. Gerenciamento de tarefas
 
 ### Funções principais
 
@@ -75,7 +75,7 @@ const frasesPorClasse = {...}
 3. **`async function criarRecorrentePersonalizada() {...}`**
 ---
 
-## 6. Sistema de Progresso
+## 📊 6. Sistema de Progresso
 ### XP e Níveis
 
 ```js
@@ -95,7 +95,7 @@ async function venderItem() {...}
 * Implementação do sistema de inventário e a relação dos itens com outros componentes do software
 ---
 
-## 7. Limpeza e Organização de Cards
+## 🧹 7. Limpeza e Organização de Cards
 
 * **`limparCards()`**: reseta o conteúdo dos containers `.purple-card` (expiradas) e `.blue-card` (concluídas).
 
@@ -103,7 +103,7 @@ async function venderItem() {...}
 
 ---
 
-## 8. Operações no Firestore
+## 🔥 8. Operações no Firestore
 ```js
 atualizarTarefaNoFirestore(id, descricao, dataLimite){...}
 salvarXPNoFirestore(classeAtiva){...}
@@ -114,7 +114,7 @@ excluirTarefaDoFirestore(id){...}
 
 ---
 
-## 9. Calendário
+## 📅 9. Calendário
 
 ```js
 function atualizarDataAtual() { … }
@@ -127,7 +127,7 @@ function renderizarCalendario() {...}
 * Gera células para cada dia do mês
 * Adiciona eventos de clique para interatividade
  
-## 10. Popups e Modais
+## 💬 10. Popups e Modais
 
 ```js
 function mostrarPopup() {...}
@@ -139,7 +139,7 @@ function abrirModalDetalhe() {...}
 * Gerencia Popups e modais necessários
 ---
 
-## 11. Utilitários
+## 🧰 11. Utilitários
 
 ### Manipulação de Datas
 
@@ -158,7 +158,7 @@ function limparCards() {...}
 ```
 ---
 
-## 12. Sistema de Classes
+## 🎭 12. Sistema de Classes
 
 ```js
 function preencherClasseSelectorComBonus() {...}
@@ -183,7 +183,7 @@ function atualizarInfoCooldown() {...}
 * Define um tempo mínimo de 14 dias para selecionar uma nova classe
 ---
 
-## 13. Exportações
+## 📤 13. Exportações
 
 ```js
 export {
