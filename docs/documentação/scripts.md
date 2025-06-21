@@ -192,9 +192,9 @@ Configura a função de swipe:
 
 
 
-## 4. Manipulação do DOM
+## 14. Manipulação do DOM
 
-### 4.1. Criação de Tarefas
+### 14.1. Criação de Tarefas
 ```js
 document.getElementById('botao-criar-tarefa').addEventListener('click', handleCreateTask)
 ```
@@ -203,7 +203,7 @@ document.getElementById('botao-criar-tarefa').addEventListener('click', handleCr
 - Por fim, cria uma tarefa
 <br><br><br>
 
-### 4.2. Exclusão de todas as tarefas
+### 14.2. Exclusão de todas as tarefas
 ```js
 document.getElementById('delete-all-tasks-button').addEventListener('click', handleDeleteAllTasks)
 ```
@@ -212,7 +212,7 @@ document.getElementById('delete-all-tasks-button').addEventListener('click', han
 - Recarrega a página após conclusão
   <br><br><br>
 
-### 4.3. Atualização de Interface
+### 14.3. Atualização de Interface
 ```js
 document.querySelectorAll('.bottom-nav .nav-button').forEach(btn => {
   btn.addEventListener('click', handleTabChange)
@@ -223,7 +223,7 @@ document.querySelectorAll('.bottom-nav .nav-button').forEach(btn => {
 - Carrega conteúdo específico
 <br><br><br>
 
-### 4.4. Gestos Touch
+### 14.4. Gestos Touch
 ```js
 document.addEventListener('touchstart', handleTouchStart)
 document.addEventListener('touchend', handleTouchEnd)
