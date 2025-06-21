@@ -1,7 +1,10 @@
 
 # 📄 Arquivo `script.js`
 
-## Módulos Importados
+## 1. Visão Geral
+  O arquivo 'script.js' é responsável por implementar scripts necessários em outras partes do projeto.
+  
+## 2. Módulos Importados
 
 ```js
 import { auth } from './auth.js';
@@ -37,9 +40,9 @@ Importa funções do arquivo 'tarefas.js':
 - `carregarInventario()`
 ---
 
-## Funções utilizadas
+## 3. Funções utilizadas
 
-### Mensagens
+### 3.1. Mensagens
 ```js
 function mostrarMensagem(mensagem)
 ```
@@ -58,7 +61,7 @@ function exibirProximaMensagem()
 - Exibe a próxima mensagem da fila, caso haja
   <br><br><br>
 
-### Blur
+### 3.2. Blur
 
 ```js
 function exibirBlurBackground()
@@ -72,7 +75,7 @@ function esconderBlurBackground()
 - Remove blur
   <br><br><br>
 
-### Pop Up
+### 3.3. Pop Up
 ```js
 function mostrarPopup(mensagem, duracao = 2000)
 ```
@@ -80,7 +83,7 @@ function mostrarPopup(mensagem, duracao = 2000)
 - Exibe a janela com a mensagem pela duração escolhida
   <br><br><br>
 
-### Verificação de sistema operacional
+### 3.4. Verificação de sistema operacional
 ```js
 function isIOSDevice()
 ```
@@ -88,7 +91,7 @@ function isIOSDevice()
 - Retorna 'true' se é um dispositivo IOS
   <br><br><br>
 
-### Anexação de arquivos
+### 3.5. Anexação de arquivos
 ```js
 function fileToBase64(file)
 ```
@@ -96,7 +99,7 @@ function fileToBase64(file)
 - Auxilia no upload de anexos
 <br><br><br>
 
-### Adicionar tarefas
+### 3.6. Adicionar tarefas
 
 ```js
 async function adicionarTarefa(descricao, dataLimite)
@@ -109,7 +112,7 @@ function ajustarWrappers()
 - Recarrega a lista de tarefas
   <br><br><br>
 
-### Função de Swipe
+### 3.7. Função de Swipe
 
 ```js
 function atualizarVisibilidadeAppBody()
@@ -124,9 +127,9 @@ Configura a função de swipe:
 - Configura a visibilidade de elementos
   <br><br><br>
 
-## Manipulação do DOM
+## 4. Manipulação do DOM
 
-### Criação de Tarefas
+### 4.1. Criação de Tarefas
 ```js
 document.getElementById('botao-criar-tarefa').addEventListener('click', handleCreateTask)
 ```
@@ -135,7 +138,7 @@ document.getElementById('botao-criar-tarefa').addEventListener('click', handleCr
 - Por fim, cria uma tarefa
 <br><br><br>
 
-### Exclusão de todas as tarefas
+### 4.2. Exclusão de todas as tarefas
 ```js
 document.getElementById('delete-all-tasks-button').addEventListener('click', handleDeleteAllTasks)
 ```
@@ -144,7 +147,7 @@ document.getElementById('delete-all-tasks-button').addEventListener('click', han
 - Recarrega a página após conclusão
   <br><br><br>
 
-### Atualização de Interface
+### 4.3. Atualização de Interface
 ```js
 document.querySelectorAll('.bottom-nav .nav-button').forEach(btn => {
   btn.addEventListener('click', handleTabChange)
@@ -155,7 +158,7 @@ document.querySelectorAll('.bottom-nav .nav-button').forEach(btn => {
 - Carrega conteúdo específico
 <br><br><br>
 
-### Gestos Touch
+### 4.4. Gestos Touch
 ```js
 document.addEventListener('touchstart', handleTouchStart)
 document.addEventListener('touchend', handleTouchEnd)
