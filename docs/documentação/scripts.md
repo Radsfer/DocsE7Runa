@@ -55,6 +55,22 @@ async function perderXP(uid, xp)
 
 * Implementa a lógica de PVE, enfrentando inimigos aleatórios que podem ser derrotados por ataques concedidos através da conclusão de tarefas e missões.
 
+---
+
+## 5. Ataques Especiais
+
+```js
+export async function adicionarAtaqueExtra(uid, quantidade = 1)
+export async function atacarInimigoExtra(dano = 10)
+export async function ataqueEspecialInimigo()
+function atualizarBotaoEspecial()
+```
+
+* Sistema de ataques com animações e efeitos especiais
+
+  ---
+
+## 6. 
 
 ## 3. Funções utilizadas
 
