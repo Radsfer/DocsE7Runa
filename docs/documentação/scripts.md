@@ -53,6 +53,8 @@ async function darRecompensa(uid, xp, moedas)
 async function perderXP(uid, xp)
 ```
 
+* Implementa a lógica de PVE, enfrentando inimigos aleatórios que podem ser derrotados por ataques concedidos através da conclusão de tarefas e missões.
+
 
 ## 3. Funções utilizadas
 
