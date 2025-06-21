@@ -150,15 +150,17 @@ function isIOSDevice()
 
 ---
 
-## 3. Funções utilizadas
+## 11. Anexação de Arquivos
 
-### 3.5. Anexação de arquivos
 ```js
 function fileToBase64(file)
 ```
 - Converte arquivos para base64
 - Auxilia no upload de anexos
-<br><br><br>
+
+---
+
+## 3. Funções utilizadas
 
 ### 3.6. Adicionar tarefas
 
