@@ -5,6 +5,24 @@ Essa seção ficará responsável por descrever as atualizações feitas durante
 ---
 
 
+## Oitava Release (25/06/25 - 02/07/25)
+
+**Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, João Pedro Rodrigues e Pedro Augusto
+
+**Responsáveis pela documentação desta versão:** Jader Oliveira, Rafael Adolfo, Rafael Ferreira e Samuel Silva
+
+A equipe passou uma semana a mais desenvolvendo o projeto para polir e acrescentar features novas ao mesmo tempo em que organizamos os documentos do trabalho final.Como nas últimas semanas, a interface foi polido, mais conteúdo foi adicionado e houveram correções visuais e de bugs, especialmente no sistema de combate e em um novo sistema de dano nos inimigos. Vale ressaltar que a equipe encontrou uma boa forma de adicionar informações dentro do app através de uma aba própria e a visualização de informações em áreas como a da troca de classes;
+
+No geral, concluímos que o aplicativo está em um bom estágio de desenvolvimento e features, com a prioridade voltada agora para correção de bugs, pequenas features, atualização da documentação e a possibilidade de adcionar artes originais para o R.U.N.A.
+
+**Metas da Semana:**
+- Finalizar funções (missão com amigos, edição de tarefas);
+- Polimento e melhorias visuais;
+- Preparar o programa para a fase de testes.
+
+---
+
+
 ## Sétima Release (09/06/25 - 16/06/25)
 
 **Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, Jader Oliveira e Pedro Augusto
@@ -24,6 +42,29 @@ Além disso, planejamos em manter o foco em finalizar as features funcionais est
 * **Terminar o sistema de combate**
 
 * **Estudar como implementar tutoriais in-app**
+
+### 📄 Changelog da Release:
+
+**Adições gerais:**
+
+- Novas missões diárias;
+- Imagens do inimigos sem fundo;
+- Modal de missão com botão de trocar;
+- Adição do ataque especial;
+- Novos backgrounds e animações;
+- Botão de ajuda na topbar;
+- Ajustes no inventário e modais de tarefas;
+
+**Organização de informação das classes:**
+
+- Sublinhado abaixo da classe informando seus bônus;
+- Informação dos bônus da classe na tela de troca
+
+**Correções de bugs:**
+
+- Corrigidos bugs nas moedas;
+- Correção de sprites;
+- Ajustes no visual dos modais
 
 ---
 
@@ -48,14 +89,14 @@ Com isso, as metas de desenvolvimento da semana foram:
 
 ### 📄 Changelog da Release:
 
-#### Implementação do multiplayer (sistema de amizade):
+**Implementação do multiplayer (sistema de amizade):**
 
 - Início da implementação do ID para o multiplayer
 - Criação do sistema de amizade
 - Modal de amigos e possibilidade de desfazer amizade
 - Nova info dos amigos
 
-#### Organizações visuais:
+**Organizações visuais:**
 
 - Ícone de carregando interface
 - Organização de interface geral
@@ -63,7 +104,7 @@ Com isso, as metas de desenvolvimento da semana foram:
 - Atualização de ícones
 - ID simplificado na topbar e com mensagem nas configurações
 
-#### Implementação de inimigos e combate: 
+**Implementação de inimigos e combate:** 
 
 - O usuário causa dano ao inimigo completar tarefas 
 - Inimigos causam dano quando tarefas expiram 
@@ -74,7 +115,7 @@ Com isso, as metas de desenvolvimento da semana foram:
 - Adição da mecânica de itens no combate
 - Ajuste na defesa do combate e seção de proteção na loja
 
-#### Novas mecânicas e features adicionais:
+**Novas mecânicas e features adicionais:**
 
 - XP agora é carregado no Firestore
 - Adição de novas Classes
@@ -82,7 +123,7 @@ Com isso, as metas de desenvolvimento da semana foram:
 - Adição de Cooldown para Mudança + Item que retira Cooldown
 - Implementação de missões diárias
 
-#### Correções de bugs:
+**Correções de bugs:**
 
 - Correção de bugs na UI
 - Correção de bugs no sistema das moedas
