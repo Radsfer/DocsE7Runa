@@ -1,53 +1,109 @@
 
 # 📄 Arquivo `script.js`
 
-## Módulos Importados
+## 🧩 1. Visão Geral
+  O arquivo 'script.js' é responsável por implementar scripts necessários em outras partes do projeto.
+
+  ---
+  
+## 🔗 2. Dependências e Importações
 
 ```js
 import { auth } from './auth.js';
+import { db, carregarMeuSimpleID, listarAmigosAceitos } from './firebase-config.js';
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+import { doc, collection, addDoc, getDocs, Timestamp, deleteDoc, serverTimestamp, setDoc, getDoc, increment } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
+import { carregarTarefas,mostrarPopup,carregarInventario, calcularDefesa } from './tarefas.js';
 ```
-- Gerencia a autênticação do usuário via Firebase
-  <br><br><br>
+* **`auth`**: objeto de autenticação do Firebase.
+* **`imports from firebase-config`**: instância configurada do Firestore e funcionalidades referentes a interações sociais do software.
+* **`imports from firebase-auth.js`**: métodos do Firebase para gerenciar autenticação
+* **`imports from firebase-firestore`**: étodos do Firebase para gerenciar documentos
+**`imports from tarefas.js`**: auxílio na criação de tarefas, popups, sistema de inventário e PVE.
 
-```js
-import { db } from './firebase-config.js';
-```
-- Representa a instância configurada do Firestore (banco de dados do Firebase)
-  <br><br><br>
-
-```js
-import { collection, addDoc, getDocs, Timestamp, deleteDoc } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
-```
-Importa algumas funções como:
-- `collection`: referencia uma coleção no Firestore
-- `addDoc`: adiciona novos documentos
-- `getDocs`: busca documentos existentes
-- `Timestamp`: manipula datas no formato Firebase
-- `deleteDoc`: usado para excluir tarefas
-  <br><br><br>
-
-```js
-import { carregarTarefas,mostrarPopup,carregarInventario } from './tarefas.js';
-
-```
-
-Importa funções do arquivo 'tarefas.js':
-- `carregarTarefas()`
-- `mostrarPopup()`
-- `carregarInventario()`
 ---
 
-## Funções utilizadas
+## 🎯 3. Sistema de Missões Diárias
 
-### Mensagens
 ```js
+const MISSOES_DIARIAS = [ ... ];
+async function sortearMissoesDiarias(uid)
+async function carregarMissoesDiarias(uid)
+function abrirModalTrocarMissao(missao, idx, uid)
+async function trocarMissaoDiaria(uid, missaoId)
+async function mostrarMissoesDiarias(uid)
+export async function atualizarProgressoMissoes(uid, tipoTarefa, xpGanho = 0)
+```
+* Implementa a lógica de missões diárias por usuário, as quais são aleatórias e concedem recompensas adicionais que se intercalam com o sistema de progressão e PVE.
+
+---
+
+## 🐉 4. Sistema de inimigos (PVE)
+
+```js
+const INIMIGOS = [ ... ]
+function getNovoInimigo(indice = 0)
+async function carregarInimigoFirestore(uid)
+async function salvarInimigoFirestore(uid, inimigo)
+async function atualizarUIInimigo()
+async function atualizarProgressoDanoInimigo(uid, dano)
+async function atacarInimigo(dano = 10)
+async function inimigoAtaca()
+async function darRecompensa(uid, xp, moedas)
+async function perderXP(uid, xp)
+```
+
+* Implementa a lógica de PVE, enfrentando inimigos aleatórios que podem ser derrotados por ataques concedidos através da conclusão de tarefas e missões.
+
+---
+
+## ✨ 5. Ataques Especiais
+
+```js
+export async function adicionarAtaqueExtra(uid, quantidade = 1)
+export async function atacarInimigoExtra(dano = 10)
+export async function ataqueEspecialInimigo()
+function atualizarBotaoEspecial()
+function playEspecialAttackAnimation(canvasId = 'especial-attack-canvas');
+```
+
+* Sistema de ataques com animações e efeitos especiais.
+
+  ---
+
+## 📝 6. Adicionar Tarefas
+
+```js
+async function adicionarTarefa(nome, descricao, dataLimite)
+```
+- Verifica se o usuário já é autenticado
+- Valida a estrutura de dados da tarefa
+- Cria uma tarefa e age conforme o seu tipo
+- Armazena a tarefa no banco de dados
+- Recarrega a lista de tarefas
+---
+
+## 🔔 7. Notificações
+
+```js
+const notificacoes = ...;
+await addDoc(collection(db, "scheduledNotifications"), { ... });
+```
+
+* Sistema de notificações entregues ao usuário nas datas especificadas.
+---
+
+## 💬 8. Mensagens, Modais e Popups
+
+```js
+const filaDeMensagens = []
 function mostrarMensagem(mensagem)
 ```
 - Recebe uma mensagem como parâmetro
 - Exibe a mensagem ao usuário através do modal
 - Utiliza do blur quando há um plano de fundo
-- Garante que uma mensagem não sobreponha outra
-  <br><br><br>
+- Garante que uma mensagem não sobreponha outra.
+
 ```js
 function exibirProximaMensagem()
 ```
@@ -55,63 +111,72 @@ function exibirProximaMensagem()
 - Verifica se há mensagens na fila
 - Obtém a primeira mensagem da fila, a exibe e retira da fila
 - Se certifica se há mais mensagens a serem exibidas depois do usuário fechar o diálogo
-- Exibe a próxima mensagem da fila, caso haja
-  <br><br><br>
-
-### Blur
+- Exibe a próxima mensagem da fila, caso haja.
 
 ```js
-function exibirBlurBackground()
+function abrirModalTrocarMissao(missao, idx, uid)
 ```
-- Aplica blur em segundo plano
-  <br><br><br>
 
-```js
-function esconderBlurBackground()
-```
-- Remove blur
-  <br><br><br>
+* Gerencia o processo de troca de missões a partir de um modal.
 
-### Pop Up
 ```js
 function mostrarPopup(mensagem, duracao = 2000)
 ```
 - Recebe uma mensagem e uma duração (em ms) como parâmetro
 - Exibe a janela com a mensagem pela duração escolhida
-  <br><br><br>
 
-### Verificação de sistema operacional
+---
+
+## 🌫️ 9. Blur
+
+```js
+function exibirBlurBackground()
+```
+- Aplica blur em segundo plano
+
+```js
+function esconderBlurBackground()
+```
+- Remove blur
+
+---
+
+## 📱 10. Verificação de sistema operacional
+
 ```js
 function isIOSDevice()
 ```
 - Identifica o navegador e o sistema operacional do usuário
 - Retorna 'true' se é um dispositivo IOS
-  <br><br><br>
 
-### Anexação de arquivos
+---
+
+## 📎 11. Anexação de Arquivos
+
 ```js
 function fileToBase64(file)
 ```
 - Converte arquivos para base64
 - Auxilia no upload de anexos
-<br><br><br>
 
-### Adicionar tarefas
+---
 
-```js
-async function adicionarTarefa(descricao, dataLimite)
-function ajustarWrappers()
-````
-- Verifica se o usuário já é autenticado
-- Valida a estrutura de dados da tarefa
-- Cria uma tarefa e age conforme o seu tipo
-- Armazena a tarefa no banco de dados
-- Recarrega a lista de tarefas
-  <br><br><br>
-
-### Função de Swipe
+## 🎠 12. Carrosséis e Sliders
 
 ```js
+function setupGraficoCarousel();
+function setupTarefasSliderCarousel();
+function atualizarVisibilidadeTarefasSlider();
+```
+* Sistemas de carrossel para gráficos e tarefas com controles responsivos.
+
+---
+
+
+## ↔️ 13. Função de Swipe
+
+```js
+const minSwipeDistance = 100;
 function atualizarVisibilidadeAppBody()
 function handleSwipe()
 ```
@@ -122,11 +187,14 @@ Configura a função de swipe:
 - Aplica CSS para adicionar uma transição animada
 - Atualiza estado da aba ativa
 - Configura a visibilidade de elementos
-  <br><br><br>
 
-## Manipulação do DOM
+---
 
-### Criação de Tarefas
+
+
+## 🧭 14. Manipulação do DOM
+
+### 14.1. Criação de Tarefas
 ```js
 document.getElementById('botao-criar-tarefa').addEventListener('click', handleCreateTask)
 ```
@@ -135,7 +203,7 @@ document.getElementById('botao-criar-tarefa').addEventListener('click', handleCr
 - Por fim, cria uma tarefa
 <br><br><br>
 
-### Exclusão de todas as tarefas
+### 14.2. Exclusão de todas as tarefas
 ```js
 document.getElementById('delete-all-tasks-button').addEventListener('click', handleDeleteAllTasks)
 ```
@@ -144,7 +212,7 @@ document.getElementById('delete-all-tasks-button').addEventListener('click', han
 - Recarrega a página após conclusão
   <br><br><br>
 
-### Atualização de Interface
+### 14.3. Atualização de Interface
 ```js
 document.querySelectorAll('.bottom-nav .nav-button').forEach(btn => {
   btn.addEventListener('click', handleTabChange)
@@ -155,7 +223,7 @@ document.querySelectorAll('.bottom-nav .nav-button').forEach(btn => {
 - Carrega conteúdo específico
 <br><br><br>
 
-### Gestos Touch
+### 14.4. Gestos Touch
 ```js
 document.addEventListener('touchstart', handleTouchStart)
 document.addEventListener('touchend', handleTouchEnd)
