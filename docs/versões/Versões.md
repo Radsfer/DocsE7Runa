@@ -5,7 +5,7 @@ Essa seção ficará responsável por descrever as atualizações feitas durante
 ---
 
 
-## Oitava Release (25/06/25 - 02/07/25)
+## Oitava Release (16/06/25 - 07/07/25)
 
 **Responsáveis pelo desenvolvimento desta versão:** Henrique de Freitas, João Pedro Rodrigues e Pedro Augusto
 
@@ -15,10 +15,35 @@ A equipe passou uma semana a mais desenvolvendo o projeto para polir e acrescent
 
 No geral, concluímos que o aplicativo está em um bom estágio de desenvolvimento e features, com a prioridade voltada agora para correção de bugs, pequenas features, atualização da documentação e a possibilidade de adcionar artes originais para o R.U.N.A.
 
-**Metas da Semana:**
+***Metas da Semana:***
 - Finalizar funções (missão com amigos, edição de tarefas);
 - Polimento e melhorias visuais;
 - Preparar o programa para a fase de testes.
+
+### 📄 Changelog da Release:
+
+**Implementação de missões com amigos:**
+
+- Missão com Amigos básicas (ainda testando);
+- Visualização do amigo na tarefa;
+- Adição de novas tarefas com amigos.
+
+**Atualizações visuais:**
+
+- Polimento na edição das tarefas;
+- ⁠Mudança visual no modal de criação de tarefas;
+- ⁠Esconde o botão de ajuda sempre que abrir um modal;
+- Mudanças na UI de amigos e pedidos de amizade;
+- Melhorado o estilo dos blocos de amigos e pedidos, adicionando feedback visual quando não há pedidos, e garantindo atualização automática das listas após aceitar ou rejeitar pedidos. 
+
+**Correção de bugs:**
+
+- Correção de bugs na UI do iOS.
+
+**Mudanças em mecânicas da plataforma:**
+
+- Corrigida e aprimorada a lógica de ataques extras e especiais em batalhas, preservando contadores ao trocar de inimigo e atualizando a interface de recompensas. 
+- Pequenas melhorias de responsividade e organização visual na loja e blocos de amigos.
 
 ---
 
