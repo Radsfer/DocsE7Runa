@@ -489,7 +489,7 @@ btn-acoes{
 # Informações do console
 
 ```js
-div#console-log{
+#console-log{
     ...
 }
 ```
@@ -497,10 +497,10 @@ div#console-log{
 * Informações de log do console.
 
 
-# EspecificaçÕes IOS
+# Especificações IOS
 
 ```js
-div#ios-notf-info{
+#ios-notf-info{
     ...
 }
 
@@ -516,4 +516,313 @@ div#ios-notf-info{
 * Dadas algumas especificações do sistema IOS, algumas especificidades do próprio precisam ser implementadas, como o sistema de notificações e botões.
 
 
+# Visualização de tarefas
 
+```js
+select-task{
+    ...
+}
+
+.select-task:hover{
+    ...
+}
+```
+
+* Definem a seleção de tarefas específicas, além de implementar o hover.
+
+
+# Modal de itens
+
+```js
+#modal-funcao-item .modal-content{
+    ...
+}
+```
+
+* Modal de função dos itens de customização do personagem.
+
+#
+
+```js
+.tarefas-slider ... {
+    ...
+}
+```
+
+* Todas as funções com esse prefixo associado sao funções associadas à forma como as tarefas ficam dispostas no app após a criação - rolagem, botões, grid e os modais em si.
+
+
+# Identificador do usuário
+
+```js
+#status-id p{
+    ...
+}
+
+#msg-mudanca{
+    ...
+}
+```
+
+* Ambas funções estao relacionadas ao identificador do usuário. A primeira define uma cor chamativa para o ID e a segunda é uma mensagem específica definida dentro de outras partes do código.
+
+
+# Tela de Carregamento
+
+```js
+.spinner{
+    ...
+}
+
+#app-loader{
+    ...
+}
+
+#loader-warning{
+    ...
+}
+```
+
+* Durante a abertura do app, existe uma tela de carregamento e exibição de mensagem. Essas funções sao responsáveis por elas.
+
+
+# Sistema de amizades
+
+```js
+#adicionar-amigo-bloco{
+    ...
+}
+
+#friend-request-container{
+    ...
+}
+
+#friend-request-container input{
+    ...
+}
+
+#friend-request-container button{
+    ...
+}
+
+#friend-request-container button:hover{
+    ....
+}
+
+#btn-pedidos-amizade{
+    ...
+}
+
+#amigos-container li{
+    ...
+}
+
+#amigos-container li:hover{
+    ...
+}
+
+.amigo-nome{
+    ...
+}
+
+#amigos-container li spain{
+    ...
+}
+
+#amigos-container small{
+    ...
+}
+
+ul#amigos-container {
+    ...
+}
+```
+
+* Essa longa lista de funções faz referência a toda parte de criação dos modais relacionados a aba de amizades dentro do app. Desde a forma dos botões e containers até as cores e blocos de input para o sistema.
+
+
+#
+
+```js
+.main-content.slide ... {
+    ...
+}
+```
+
+* Todas as funções com esse prefixo tratam das animações de movimento para a direita e a esquerda da tela.
+
+
+# Modais de Classe
+
+```js
+.character-header{
+    ...
+}
+
+.character-box img{
+    ...
+}
+
+.character-box-modal img{
+    ...
+}
+
+.character-info{
+    ...
+}
+
+.classe-info{
+    ...
+}
+
+#classe-ativa small{
+
+}
+```
+
+* Criação dos modais de classe (personagem). Um modal que fica na parte superior da tela, contem imagem da classe escolhida e outras definições como o ID, nivel e experiência (XP) do usuário.
+
+
+# Itens Equipados
+
+```js
+.iten-ativo-car span{
+    ...
+}
+
+#itens-ativos-container > img{
+    ...
+}
+
+#itens-ativos-container-modal{
+    ...
+}
+```
+
+* Criação dos modais de itens que ficam logo abaixo dos modais informativos do personagem.
+
+
+# Missões Diárias
+
+```js
+.missoes-diarias-bloco{
+    ...
+}
+
+.missao-diaria{
+    ...
+}
+
+.missao-diaria.concluida{
+    ...
+}
+
+.missao-info-lateral{
+    ...
+}
+
+.missao-info-lateral .missao-progresso{
+    ...
+}
+
+.missao-info-lateral .missao-xp{
+    ...
+}
+
+.missao-info-lateral .missao-check{
+    ...
+}
+```
+
+* Esse bloco de funções cria os modais relacionados as missões diárias existentes. Além disso questões de exibição também são tratadas aqui. Questões como progresso da missão, experiência recebica ao completar, conclusão e ainda a concluir... Todos os modais e cores utilizadas para isso são definidas nestas funções.
+
+
+# Visualização e Ações de Inimigos
+
+```js
+.main-content-show.bg ... {
+    ...
+}
+
+#tab-enemy{
+    ...
+}
+
+#inimigo-container{
+    ...
+}
+
+#inimigo-img{
+    ...
+}
+
+#inimigo-img img{
+    ...
+}
+
+#inimigo-img .inimigo-sombra{
+    ...
+}
+
+#enemy-actions button: ... {
+    ...
+}
+```
+
+* Visualização dos inimigos setada corretamente e em acordo com o background definido para cada um. Também defini as sombras e limites das imagens, garantindo que respeitem as margens setadas. Também definem as interações que o inimigo pode ter com o usuário.
+
+
+# Interação com Inimigos
+
+```js
+#especial-inimigo .especial-progress-bar{
+    ...
+}
+
+#especial-inimigo.carregado{
+    ...
+}
+
+#enemy-actions button: ... {
+    ...
+}
+```
+
+* Botões de interação com o inimigo.
+
+
+# Modal Informativo
+
+```js
+#modal-ajuda ... {
+
+}
+```
+
+* Existem muitas funções com esse prefixo. Todas elas setam e organizam um modal que fica no canto superior esquerdo da tela do app, um botão informativo que, como o nome diz, serve como uma ajuda para que o usuário se situe dentro do aplicativo, caso esteja confuso.
+
+
+# Trocar Missões
+
+```js
+#modal-trocar-missao ... {
+    ...
+}
+
+#btn-trocar-missao-modal{
+    ...
+}
+```
+
+* Auto-explicativo. Todos esses modais sao utilizados para criar para o usuário um ambiente que permite mudar uma missão diária que, por algum motivo, ele seja incapaz/nao queira realizar.
+
+
+# Criação de Tarefas
+
+```js
+#modal-criar-tarefa ... {
+    ...
+}
+```
+
+* Assim como outras funções, todas que possuem esse prefixo estao relacionadas a criação de tarefas, que sao específicas por cada tipo (personalizadas, periódicas e não-periódicas), e portanto sao muitas funções.
