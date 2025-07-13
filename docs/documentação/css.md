@@ -320,6 +320,200 @@ slider-container::webkit-scrollbar-thumb{
 .dia{
     ...
 }
+
+.dia.com-tarefa{
+    ...
+}
+
+.dia.concluida{
+    ...
+}
+
+.dia.expirada
 ```
 
-* Calendário de tarefas, implementado com uma inferface funcional e cores distintas por tipo de tarefa.
+* Calendário de tarefas, implementado com uma inferface funcional e cores distintas por tipo de tarefa - concluida, expirada.
+
+# Tarefas Personalizadas
+
+```js
+#mes-anterior, mes-seguinte{
+    ...
+}
+```
+* Permite visualizar os calendários de meses passados e meses seguintes.
+
+
+```js
+.modal-tarefas-custom {
+    ...
+}
+```
+
+* Existem duas funções desse tipo, ambas lidam com as tarefas customizáveis, que admitem algumas diferenças em relação as outras tarefas.
+
+# Botão de fechar.
+
+```js
+.btn-fechar{
+    ...
+}
+```
+
+* Botão customizado com a cor vermelha. Como o nome sugere, é um botão de 'fechar'. Esses botões tipicamente recebem coloração vermelha, questões de semiótica.
+
+# Visualização de itens equipados
+
+```js
+.itens-ativos-grid{
+    ...
+}
+
+.item-ativo-card{
+    ...
+}
+
+.item-ativo-card img{
+    ...
+}
+```
+
+* Essas funções implementam a visualização dos itens que o personagem esta equipando, logo abaixo do card de personagem. o grid gerencia as posições enquanto as outras duas funções lidam com o png do item e o item em si.
+
+# Unificação dos botões
+
+```js
+btn-wrapper{
+    ...
+}
+```
+
+* Unifica os botões, posteriormente utilizado no script.js
+
+
+# Botão de ações
+
+```js
+btn-acoes{
+    ...
+}
+```
+
+* Botão customizado com cor verde, utilizado nas configurações do usuário.
+
+# Telas suspensas
+
+```js
+.dropdown-acoes{
+    ...
+}
+
+.dropdown-acoes.para-cima{
+    ...
+}
+
+.dropdown-acoes.visivel{
+    ...
+}
+
+.dropdown-item{
+    ...
+}
+
+.dropdown-item:hover{
+    ...
+}
+```
+
+* Todas essas funções fazem o gerenciamento das telas que surgem ao clicar em algum botão ou tarefa. Tipicamente sao chamadas de superfícies flutuantes.
+
+
+# Caixas de marcação
+
+```js
+.checkbox-alinhada{
+    ...
+}
+
+.checkbox-alinhada input[]{
+    ...
+}
+
+.checkbox-container input[]{
+    ...
+}
+
+.checkbox-container label{
+    ...
+}
+
+.custom-checkbox{
+    ...
+}
+```
+
+* Implementação via css das caixas de marcação. Dentro do app, são as abas de escolha dentro das tarefas.
+
+
+# Personalização por tipo de tarefa
+
+```js
+.dia.periodico{
+    ...
+}
+
+.dia.nao-periodico{
+    ...
+}
+
+.dia.personalizado{
+    ...
+}
+```
+
+* Essas são personalizações de cores para cada tarefa, implementadas para facilitar a divisão e melhor visualização de cada tipo.
+
+
+# Personalização de tarefas expiradas
+
+```js
+.dia.expirada-periodico{...}
+.dia.expirada-nao-periodico{...}
+.dia.expirada-personalizado{...}
+.dia.expirada{...}
+```
+
+* Essas são personalizações de cores para cada tipo de tarefa quando expiram, ou seja, não foram concluidas.
+
+
+# Informações do console
+
+```js
+div#console-log{
+    ...
+}
+```
+
+* Informações de log do console.
+
+
+# EspecificaçÕes IOS
+
+```js
+div#ios-notf-info{
+    ...
+}
+
+#ios-notification-modal{
+    ...
+}
+
+.ios-button{
+    ...
+}
+```
+
+* Dadas algumas especificações do sistema IOS, algumas especificidades do próprio precisam ser implementadas, como o sistema de notificações e botões.
+
+
+
