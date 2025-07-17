@@ -55,48 +55,7 @@ O **Diagrama de Casos de Uso** ilustra as principais interações e funcionalida
 
 ### Fluxograma do Aplicativo
 
-```mermaid
-graph TD
-    A(Início) --> B{Usuário está logado?};
-    subgraph "Fluxo de Autenticação"
-        C[Tela de Login] --> D(Clica em 'Login com Google');
-        D --> E{Sucesso na Autenticação?};
-    end
-    B -- Não --> C;
-    B -- Sim --> F[Tela Principal];
-    E -- Não --> C;
-    E -- Sim --> F;
-    subgraph "Ações no App"
-        F --> G{Usuário seleciona uma aba};
-        G -- Tarefas --> H(Visualiza e Gerencia Tarefas);
-        H --> H1(Cria nova tarefa);
-        H --> H2(Conclui uma tarefa);
-        
-        G -- Batalha --> I(Visualiza Inimigo na Tela);
-        I --> I1(Ataca o Inimigo);
-        
-        G -- Loja --> J(Visualiza a Loja);
-        J --> J1(Compra um item);
-        
-        G -- Inventário --> K(Visualiza o Inventário);
-        K --> K1(Equipa ou Vende um item);
-        
-        G -- Amigos --> L(Visualiza e Gerencia Amigos);
-        
-        G -- Configurações --> M(Ajusta Opções do App);
-        M --> M1(Faz Logout);
-    end
-    H2 -- Aciona --> I1;
-    M1 --> C;
-    classDef tela fill:#b3e5fc,stroke:#03a9f4,stroke-width:2px,color:#000;
-    classDef acao fill:#cde4ff,stroke:#5a96e3,stroke-width:2px,color:#000;
-    classDef decisao fill:#fff9c4,stroke:#ffb300,stroke-width:2px,color:#000;
-    classDef inicioFim fill:#dcedc8,stroke:#689f38,stroke-width:2px,color:#000;
-    class A inicioFim;
-    class C,F tela;
-    class B,E,G decisao;
-    class D,H,H1,H2,I,I1,J,J1,K,K1,L,M,M1 acao;
- ```
+![FLUXO](../img/diagrama2.png)
 
 
 Este fluxograma detalha a **jornada do usuário** e a lógica de navegação dentro do aplicativo, mostrando os caminhos possíveis desde o início até a execução das principais ações.
