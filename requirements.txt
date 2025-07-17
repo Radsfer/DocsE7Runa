@@ -1,4 +1,4 @@
-mkdocs
-mkdocs-material
-mkdocs-mermaid2-plugin
-mkdocs-plugin-tags
+mkdocs==1.6.0
+mkdocs-material==9.5.26
+mkdocs-mermaid2-plugin==1.1.2
+mkdocs-plugin-tags==1.3.0
