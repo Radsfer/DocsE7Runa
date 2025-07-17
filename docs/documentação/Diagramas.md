@@ -55,6 +55,7 @@ O **Diagrama de Casos de Uso** ilustra as principais interações e funcionalida
 
 ### Fluxograma do Aplicativo
 
+
 ```mermaid
 graph TD
     %% ----- Ponto de Partida -----
@@ -110,6 +111,7 @@ graph TD
     class B,E,G decisao;
     class D,H,H1,H2,I,I1,J,J1,K,K1,L,M,M1 acao;
  ```
+
 
 Este fluxograma detalha a **jornada do usuário** e a lógica de navegação dentro do aplicativo, mostrando os caminhos possíveis desde o início até a execução das principais ações.
 
