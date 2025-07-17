@@ -43,7 +43,12 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      # Esta é a parte que faz a mágica acontecer
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
