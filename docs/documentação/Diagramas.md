@@ -36,7 +36,7 @@ O diagrama está bem estruturado e evidencia preocupações essenciais no desenv
 
 
 
-## Diagrama de Casos de Uso
+### Diagrama de Casos de Uso
 
 ![Diagrama de caso de uso](../img/diagrama1.jpeg)
 
