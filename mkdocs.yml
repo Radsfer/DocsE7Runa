@@ -34,12 +34,12 @@ theme:
     - search.share
     - content.code.copy
   
-  plugins:
+plugins:
     - search
     - tags
     - mermaid2
 
-  markdown_extensions:
+markdown_extensions:
     - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -51,7 +51,7 @@ theme:
     - md_in_html
     - pymdownx.blocks.caption
 
-  nav:
+nav:
     - Home: index.md
     - Changelog: 
       - Histórico de Versões: versões/Versões.md
