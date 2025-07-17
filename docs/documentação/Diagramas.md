@@ -130,7 +130,7 @@ Estes diagramas são fundamentais, pois detalham **como** as operações acontec
 * **script.js / tarefas.js**: Arquivos JavaScript que contêm a lógica de negócios do lado do cliente.
 * **Firestore**: O banco de dados NoSQL (backend) que armazena todos os dados da aplicação.
 
-#### **Sequência de Criação de Tarefa**
+#### Sequência de Criação de Tarefa
 
 ```mermaid
 sequenceDiagram
@@ -178,7 +178,7 @@ Este diagrama detalha o processo de **criação de uma nova tarefa**:
 6.  Com os dados recebidos, `tarefas.js` processa e renderiza a nova lista de tarefas no HTML, retornando o controle para a **Interface**.
 7.  A **Interface** oculta o modal de criação e exibe a lista de tarefas atualizada para o **Usuário**.
 
-#### **Sequência de Conclusão de Tarefa e Combate**
+#### Sequência de Conclusão de Tarefa e Combate
 
 ```mermaid
 sequenceDiagram
@@ -244,7 +244,8 @@ Este diagrama descreve a sequência de eventos quando um **usuário conclui uma 
   * **[Inimigo não derrotado]**: O fluxo de combate termina aqui, e a vida atualizada do inimigo já foi salva.
 6.  Finalmente, a interface é atualizada (`atualizarUInimigo()`, `carregarTarefas()`) para refletir o novo estado do inimigo e remover a tarefa concluída da lista principal.
 
-#### **Sequência de Compra de Item na Loja**
+#### Sequência de Compra de Item na Loja
+
 ```mermaid
 sequenceDiagram
     actor Usuário
