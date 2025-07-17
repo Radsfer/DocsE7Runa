@@ -119,11 +119,11 @@ O **Fluxograma da Aplicação** mapeia o fluxo de navegação do usuário. O pro
 
 -----
 
-## ** Diagramas de Sequência**
+###  Diagramas de Sequência
 
 Estes diagramas são fundamentais, pois detalham **como** as operações acontecem, mostrando a troca de mensagens entre os diferentes componentes do sistema (`Interface`, `scripts` e `Firestore`) ao longo do tempo.
 
-### **Participantes Comuns:**
+#### Participantes Comuns:
 
 * **Usuário**: O ator que inicia a interação.
 * **Interface**: A camada de front-end com a qual o usuário interage (HTML/CSS).
