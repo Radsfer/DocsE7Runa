@@ -45,7 +45,7 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences:
+  - pymdownx.superfences: #falto foi isso
       custom_fences:
         - name: mermaid
           class: mermaid
