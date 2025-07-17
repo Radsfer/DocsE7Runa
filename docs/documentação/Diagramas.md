@@ -55,25 +55,17 @@ O **Diagrama de Casos de Uso** ilustra as principais interações e funcionalida
 
 ### Fluxograma do Aplicativo
 
-
 ```mermaid
 graph TD
-    %% ----- Ponto de Partida -----
     A(Início) --> B{Usuário está logado?};
-    
-    %% --- Subgrafo para o fluxo de quando o usuário NÃO está logado ---
     subgraph "Fluxo de Autenticação"
         C[Tela de Login] --> D(Clica em 'Login com Google');
         D --> E{Sucesso na Autenticação?};
     end
-    
-    %% --- Links que conectam os fluxos ---
     B -- Não --> C;
     B -- Sim --> F[Tela Principal];
     E -- Não --> C;
     E -- Sim --> F;
-
-    %% --- Subgrafo para as ações principais do usuário LOGADO ---
     subgraph "Ações no App"
         F --> G{Usuário seleciona uma aba};
         G -- Tarefas --> H(Visualiza e Gerencia Tarefas);
@@ -94,18 +86,12 @@ graph TD
         G -- Configurações --> M(Ajusta Opções do App);
         M --> M1(Faz Logout);
     end
-
-    %% --- Links que cruzam os subgrafos ---
     H2 -- Aciona --> I1;
     M1 --> C;
-
-    %% ----- Definições de Estilo (mesmas de antes) -----
     classDef tela fill:#b3e5fc,stroke:#03a9f4,stroke-width:2px,color:#000;
     classDef acao fill:#cde4ff,stroke:#5a96e3,stroke-width:2px,color:#000;
     classDef decisao fill:#fff9c4,stroke:#ffb300,stroke-width:2px,color:#000;
     classDef inicioFim fill:#dcedc8,stroke:#689f38,stroke-width:2px,color:#000;
-
-    %% ----- Aplicação dos Estilos -----
     class A inicioFim;
     class C,F tela;
     class B,E,G decisao;
